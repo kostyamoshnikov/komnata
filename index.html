@@ -406,7 +406,8 @@ nav a:hover,nav a.active{color:var(--light)}
 .tg-widget.visible{opacity:1;transform:translateY(0);pointer-events:all}
 .tg-bubble{background:var(--ink);border:1px solid rgba(255,255,255,.15);color:var(--mist);font-size:12.5px;padding:10px 16px;border-radius:2px;white-space:nowrap;opacity:0;transition:opacity .4s}
 .tg-bubble.visible{opacity:1}
-.tg-btn{width:48px;height:48px;background:var(--light);color:var(--void);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0}
+.tg-btn{width:48px;height:48px;background:var(--light);color:var(--void);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0;box-shadow:0 4px 18px rgba(0,0,0,.35);transition:transform .25s,box-shadow .25s}
+.tg-btn:hover{transform:scale(1.06);box-shadow:0 6px 22px rgba(0,0,0,.45)}
 .tg-btn svg{width:24px;height:24px}
 @media(max-width:600px){.tg-bubble{display:none}}
 
@@ -508,12 +509,12 @@ nav a:hover,nav a.active{color:var(--light)}
     <div class="sec-head reveal"><span class="eyebrow">01</span><h2>О компании</h2></div>
     <div class="grid">
       <a href="/about" class="card reveal">
-        <div><span class="tag">Арт-проект</span><h3>Кто мы</h3>
+        <div><span class="tag">Театр</span><h3>Кто мы</h3>
         <p>Театральная компания из Петербурга. До БуФеста — проект «ZAVIST'» и первые гастроли Мастерской Юрия Бутусова.</p></div>
       </a>
       <a href="/team" class="card reveal">
         <div><span class="tag">Люди</span><h3>Команда</h3>
-        <p>Кряжева, Мошников, Журавлёва, Виноградова, Гроник, Кряжев, Фунтов — команда «Комнаты света».</p></div>
+        <p>Актёры, режиссёры и постановочная команда, которые делают спектакли «Комнаты света».</p></div>
       </a>
       <a href="/projects" class="card reveal">
         <div><span class="tag">Проект</span><h3>ZAVIST'</h3>
@@ -794,7 +795,6 @@ nav a:hover,nav a.active{color:var(--light)}
   <div class="tg-bubble" id="tg-bubble">Напишите нам — бот ответит мгновенно</div>
   <a class="tg-btn" href="https://t.me/lightroom_theatre" target="_blank" rel="noopener" aria-label="Написать в Telegram">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.093 13.68l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.836.88h.219z"/></svg>
-    Написать нам
   </a>
 </div>
 <script>
