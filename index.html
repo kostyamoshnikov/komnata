@@ -5,6 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>КОМНАТА СВЕТА — театральная компания из Петербурга</title>
 <meta name="description" content="КОМНАТА СВЕТА — театральная компания из Петербурга. Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова. Спектакли, билеты, команда.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="theme-color" content="#050505">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="КОМНАТА СВЕТА — театральная компания из Петербурга">
+<meta property="og:description" content="Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова. 10–15 августа, площадка «Скороход».">
+<meta property="og:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
+<meta property="og:url" content="https://komnata-sveta.ru/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -59,7 +75,9 @@ nav{
   letter-spacing:.3em;font-size:15px;color:var(--light);
   text-decoration:none;white-space:nowrap;
   text-transform:uppercase;
+  display:flex;align-items:center;gap:12px;
 }
+.logo-mark{height:34px;width:auto;flex-shrink:0;display:block}
 .logo small{display:block;font-family:'Inter',sans-serif;font-weight:300;font-size:8px;letter-spacing:.5em;color:var(--steel);margin-top:4px;text-transform:uppercase}
 .nav-links{display:flex;gap:32px}
 .nav-links a{
@@ -99,9 +117,8 @@ header{
 @keyframes portal-in{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
 @keyframes glow-pulse{0%,100%{opacity:.5}50%{opacity:1}}
 .hero-a{
-  font-family:'Playfair Display',serif;font-weight:500;
-  font-size:clamp(100px,20vw,220px);line-height:1;
-  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.28);
+  width:clamp(180px,26vw,320px);
+  opacity:.5;
   user-select:none;position:relative;
   animation:fade-in 2.4s ease both .6s;
 }
@@ -460,7 +477,7 @@ nav a:hover,nav a.active{color:var(--light)}
 
 <nav>
   <div class="nav-in">
-    <a class="logo" href="/">Комната<small>Света</small></a>
+    <a class="logo" href="/"><img class="logo-mark" src="/assets/img/logo-icon-light-sm.png" alt="Комната света">Комната<small>Света</small></a>
     <div class="nav-links">
       <a href="/bufest">БуФест</a>
       <a href="/about">О компании</a>
@@ -476,7 +493,7 @@ nav a:hover,nav a.active{color:var(--light)}
 
 <header id="top">
   <div class="portal" aria-hidden="true"><div class="portal-frame"></div></div>
-  <div class="hero-a" aria-hidden="true">К</div>
+  <img class="hero-a" src="/assets/img/logo-icon-light-hero.png" alt="" aria-hidden="true">
   <h1>Комната Света</h1>
   <p class="sub">Театральная компания из Петербурга</p>
   <div class="hero-next">
@@ -599,6 +616,7 @@ nav a:hover,nav a.active{color:var(--light)}
   <div class="wrap">
     <div class="foot-grid">
       <div>
+        <img src="/assets/img/logo-icon-light-sm.png" alt="Комната света" style="height:40px;width:auto;margin-bottom:18px;opacity:.9">
         <h4>КОМНАТА СВЕТА</h4>
         <a href="https://t.me/lightroom_theatre" target="_blank" rel="noopener">Telegram компании</a>
         <a href="/team" style="margin-top:14px">Команда</a>
@@ -731,7 +749,7 @@ nav a:hover,nav a.active{color:var(--light)}
     <a href="/contacts" onclick="toggleMenu()">Контакты</a>
   </nav>
   <div class="m-menu-contacts">t.me/lightroom_theatre</div>
-  <div class="m-menu-footer">КОМНАТА СВЕТА © 2026</div>
+  <div class="m-menu-footer"><img src="/assets/img/logo-icon-light-sm.png" alt="" style="height:16px;width:auto;vertical-align:middle;margin-right:8px;opacity:.7">КОМНАТА СВЕТА © 2026</div>
 </div>
 
 <div id="cookie-banner">
