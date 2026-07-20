@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>КОМНАТА СВЕТА — театральная компания из Петербурга</title>
+<meta name="description" content="КОМНАТА СВЕТА — театральная компания из Петербурга. Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова. Спектакли, билеты, команда.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+html{overflow-x:hidden;max-width:100%;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+:root{
+  --void:#050505;
+  --ink:#0F0F0F;
+  --steel:#8C8C8C;
+  --mist:#D9D9D9;
+  --light:#FFFFFF;
+  --maxw:1320px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--void);
+  color:var(--mist);
+  font-family:'Inter',system-ui,sans-serif;
+  font-weight:300;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  max-width:100vw;
+}
+::selection{background:var(--light);color:var(--void)}
+img,video,iframe{max-width:100%;height:auto}
+
+h1,h2,h3,.disp{font-family:'Playfair Display',serif;font-weight:500;text-transform:uppercase}
+
+.eyebrow{
+  font-family:'Inter',sans-serif;
+  font-size:11px;font-weight:400;
+  letter-spacing:.45em;text-transform:uppercase;
+  color:var(--steel);
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ── nav ─────────────────────────── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  background:linear-gradient(to bottom, rgba(5,5,5,.92), rgba(5,5,5,0));
+  backdrop-filter:blur(2px);
+}
+.nav-in{
+  max-width:var(--maxw);margin:0 auto;padding:22px 24px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.logo{
+  font-family:'Playfair Display',serif;font-weight:500;
+  letter-spacing:.3em;font-size:15px;color:var(--light);
+  text-decoration:none;white-space:nowrap;
+  text-transform:uppercase;
+}
+.logo small{display:block;font-family:'Inter',sans-serif;font-weight:300;font-size:8px;letter-spacing:.5em;color:var(--steel);margin-top:4px;text-transform:uppercase}
+.nav-links{display:flex;gap:32px}
+.nav-links a{
+  color:var(--steel);text-decoration:none;
+  font-family:'Inter',sans-serif;font-size:11px;
+  letter-spacing:.24em;text-transform:uppercase;
+  transition:color .3s,text-shadow .3s;
+}
+.nav-links a:hover,.nav-links a:focus-visible,.nav-links a.active{color:var(--light);text-shadow:0 0 12px rgba(255,255,255,.4)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:1px solid var(--light);outline-offset:3px}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* ── hero: портал ─────────────────────────── */
+header{
+  min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;position:relative;padding:120px 24px 80px;
+}
+.portal{
+  position:absolute;inset:0;pointer-events:none;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.portal-frame{
+  position:relative;width:min(640px,72vw);height:min(640px,72vw);
+  animation:portal-in 2s cubic-bezier(.2,.8,.2,1) both;
+}
+.portal-frame::before{
+  content:"";position:absolute;inset:0;
+  border:22px solid var(--steel);border-bottom:none;
+  opacity:.5;
+}
+.portal-frame::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 30%, rgba(255,255,255,.10), transparent 65%);
+  animation:glow-pulse 5s ease-in-out infinite;
+}
+@keyframes portal-in{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+@keyframes glow-pulse{0%,100%{opacity:.5}50%{opacity:1}}
+.hero-a{
+  font-family:'Playfair Display',serif;font-weight:500;
+  font-size:clamp(100px,20vw,220px);line-height:1;
+  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.28);
+  user-select:none;position:relative;
+  animation:fade-in 2.4s ease both .6s;
+}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+header h1{
+  font-size:clamp(22px,4.4vw,42px);
+  letter-spacing:.36em;margin-top:28px;text-indent:.36em;
+  color:var(--light);
+  animation:rise 1.4s ease both 1s;
+}
+header .sub{
+  margin-top:18px;color:var(--steel);
+  font-family:'Inter',sans-serif;font-size:12px;font-weight:300;
+  letter-spacing:.3em;text-transform:uppercase;text-indent:.3em;
+  animation:rise 1.4s ease both 1.25s;
+}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero-next{
+  margin-top:64px;display:inline-flex;flex-direction:column;gap:10px;align-items:center;
+  animation:rise 1.4s ease both 1.5s;
+}
+.hero-next .eyebrow{color:var(--steel)}
+.hero-next > a{
+  color:var(--light);text-decoration:none;
+  font-family:'Inter',sans-serif;font-weight:400;
+  font-size:15px;letter-spacing:.18em;text-transform:uppercase;
+  border:1px solid var(--steel);
+  padding:16px 34px;transition:all .35s;
+}
+.hero-next > a:hover{background:var(--light);color:var(--void);border-color:var(--light);box-shadow:0 0 30px rgba(255,255,255,.35)}
+.hero-next .date-line{color:var(--light);font-size:13px;letter-spacing:.2em;font-family:'Inter',sans-serif}
+
+/* ── sections ─────────────────────── */
+section{padding:110px 0;position:relative}
+.sec-head{display:flex;align-items:baseline;gap:26px;margin-bottom:60px}
+.sec-head h2{font-size:clamp(20px,3vw,30px);letter-spacing:.26em;color:var(--light)}
+.sec-head::after{content:"";flex:1;height:1px;background:linear-gradient(to right, var(--steel), transparent)}
+
+/* афиша БуФеста */
+.event{
+  display:grid;grid-template-columns:150px 1fr auto;gap:28px;align-items:center;
+  padding:34px 0;border-bottom:1px solid rgba(217,217,217,.09);
+}
+.event:first-of-type{border-top:1px solid rgba(217,217,217,.09)}
+.ev-date{font-family:'Playfair Display',serif;font-weight:500;font-size:32px;color:var(--light);line-height:1.15}
+.ev-date small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.28em;color:var(--steel);text-transform:uppercase;margin-top:4px}
+.ev-info h3{font-size:17px;letter-spacing:.14em;font-weight:500;margin-bottom:6px;color:var(--light);text-transform:uppercase}
+.ev-info p{color:var(--steel);font-size:14px}
+.ev-cta{
+  font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--steel);border:1px solid rgba(140,140,140,.4);
+  padding:13px 22px;text-decoration:none;white-space:nowrap;transition:all .3s;
+}
+.ev-cta:hover{border-color:var(--light);color:var(--light);text-shadow:0 0 10px rgba(255,255,255,.4)}
+@media(max-width:760px){
+  .event{grid-template-columns:1fr;gap:12px}
+  .ev-cta{justify-self:start;white-space:normal;text-align:center}
+}
+
+/* карточки спектаклей / проектов — грань портала */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  background:var(--ink);padding:36px 30px;min-height:250px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  border-right:2px solid var(--steel);border-bottom:2px solid var(--steel);
+  transition:border-color .35s,box-shadow .35s;position:relative;overflow:hidden;
+}
+.card:hover{border-color:var(--light);box-shadow:0 0 40px -12px rgba(255,255,255,.25)}
+.card .tag{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--steel);font-family:'Inter',sans-serif}
+.card h3{font-size:18px;letter-spacing:.1em;font-weight:500;margin:16px 0 10px;color:var(--light);text-transform:uppercase}
+.card p{color:var(--steel);font-size:13.5px}
+a.card{color:inherit;text-decoration:none;display:block}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+
+/* флагман — БуФест / Бутусов */
+.flag{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.flag-visual{
+  aspect-ratio:3/4;background:var(--ink);position:relative;overflow:hidden;
+  display:flex;align-items:flex-end;padding:34px;
+  border-right:2px solid var(--steel);border-bottom:2px solid var(--steel);
+}
+.flag-visual::before{
+  content:"";position:absolute;inset:24px;
+  border:2px solid var(--steel);border-bottom:none;opacity:.5;
+}
+.flag-visual span{
+  font-family:'Inter',sans-serif;letter-spacing:.34em;font-size:12px;
+  text-transform:uppercase;color:var(--mist);position:relative;
+}
+.flag h3{font-size:clamp(24px,4vw,38px);letter-spacing:.1em;margin-bottom:26px;line-height:1.3;color:var(--light)}
+.flag p{color:var(--steel);max-width:48ch;margin-bottom:18px}
+.flag .quote{
+  border-left:1px solid var(--light);padding-left:22px;
+  color:var(--mist);font-style:normal;margin:32px 0;
+  font-size:15px;letter-spacing:.04em;
+}
+.btn{
+  display:inline-block;margin-top:10px;
+  font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--void);background:var(--light);padding:16px 32px;text-decoration:none;
+  transition:opacity .3s,box-shadow .3s;
+}
+.btn:hover{opacity:.88;box-shadow:0 0 30px rgba(255,255,255,.3)}
+.btn-ghost{
+  display:inline-block;margin-top:10px;
+  font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--light);background:transparent;border:1px solid var(--steel);padding:15px 31px;text-decoration:none;
+  transition:all .3s;
+}
+.btn-ghost:hover{border-color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.2)}
+@media(max-width:900px){.flag{grid-template-columns:1fr;gap:44px}}
+
+/* манифест */
+.manifest{background:var(--ink);text-align:center}
+.manifest p.big{
+  font-family:'Playfair Display',serif;font-weight:500;
+  font-size:clamp(19px,3.2vw,32px);line-height:1.6;
+  max-width:26ch;margin:0 auto;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--light);
+}
+.manifest p.big em{font-style:normal;color:var(--mist)}
+.values{
+  margin-top:56px;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;
+  color:var(--steel);font-family:'Inter',sans-serif;
+  font-size:11px;letter-spacing:.36em;text-transform:uppercase;
+}
+.values span::after{content:"·";margin-left:18px;color:var(--light)}
+.values span:last-child::after{content:""}
+
+/* подписка */
+.subscribe{background:var(--ink);text-align:center}
+.subscribe h2{font-size:clamp(18px,2.6vw,26px);letter-spacing:.22em;margin-bottom:16px;color:var(--light)}
+.subscribe p{color:var(--steel);max-width:52ch;margin:0 auto 36px}
+.sub-form{display:flex;gap:0;max-width:480px;margin:0 auto}
+.sub-form input{
+  flex:1;background:transparent;border:1px solid var(--steel);border-right:none;
+  padding:16px 20px;color:var(--light);font-family:'Inter',sans-serif;font-size:14px;
+}
+.sub-form input::placeholder{color:rgba(140,140,140,.8)}
+.sub-form button{
+  background:var(--light);border:none;cursor:pointer;
+  font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--void);padding:16px 26px;
+}
+.sub-ok{color:var(--light);margin-top:20px;display:none;font-size:14px;letter-spacing:.06em}
+@media(max-width:560px){
+  .sub-form{flex-direction:column;gap:12px}
+  .sub-form input{border-right:1px solid var(--steel)}
+}
+
+/* footer */
+footer{padding:80px 0 46px;border-top:1px solid rgba(217,217,217,.08)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px;margin-bottom:60px}
+footer h4{
+  font-family:'Inter',sans-serif;font-size:11px;font-weight:400;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--light);margin-bottom:20px;
+}
+footer a{color:var(--steel);text-decoration:none;display:block;margin-bottom:10px;font-size:14px;transition:color .3s}
+footer a:hover{color:var(--light)}
+footer p{color:var(--steel);font-size:14px}
+.requisites{
+  color:rgba(140,140,140,.6);font-size:12px;line-height:1.9;
+  border-top:1px solid rgba(217,217,217,.06);padding-top:30px;
+}
+@media(max-width:760px){
+  .foot-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .foot-grid>div:first-child{grid-column:1/3}
+  footer h4{margin-bottom:12px}
+  footer a{margin-bottom:8px;font-size:13px}
+}
+@media(max-width:420px){.foot-grid{grid-template-columns:1fr}.foot-grid>div:first-child{grid-column:1}}
+
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease, transform .9s ease}
+.reveal.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+
+.sec-head::after{transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.4,0,.2,1) .2s}
+.sec-head.line-on::after{transform:scaleX(1)}
+
+.grid .reveal:nth-child(1),.collab-grid .reveal:nth-child(1){transition-delay:0s}
+.grid .reveal:nth-child(2),.collab-grid .reveal:nth-child(2){transition-delay:.1s}
+.grid .reveal:nth-child(3),.collab-grid .reveal:nth-child(3){transition-delay:.2s}
+.grid .reveal:nth-child(4),.collab-grid .reveal:nth-child(4){transition-delay:.3s}
+
+p a, li a{color:var(--light);text-decoration:underline;text-decoration-color:rgba(255,255,255,.35);transition:opacity .3s}
+p a:hover, li a:hover{opacity:.75}
+nav a{color:var(--steel)}
+nav a:hover,nav a.active{color:var(--light)}
+
+/* мобильное меню */
+.burger{
+  display:none;flex-direction:column;gap:6px;cursor:pointer;
+  padding:8px;background:none;border:none;
+  position:fixed;top:18px;right:20px;z-index:200;
+}
+.burger span{display:block;width:22px;height:1px;background:var(--light);transition:all .45s cubic-bezier(.4,0,.2,1);transform-origin:center}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:760px){.burger{display:flex}}
+
+.m-menu{
+  position:fixed;inset:0;z-index:150;background:var(--void);
+  display:flex;flex-direction:column;justify-content:center;
+  padding:80px 40px 60px;
+  transform:translateX(100%);
+  transition:transform .5s cubic-bezier(.16,1,.3,1);
+}
+.m-menu.open{transform:translateX(0)}
+.m-menu::before{
+  content:"";position:absolute;top:8%;left:12%;width:70%;height:80%;
+  border:14px solid var(--steel);border-bottom:none;opacity:0;
+  transition:opacity .6s ease .3s;
+}
+.m-menu.open::before{opacity:.35}
+.m-menu-links{display:flex;flex-direction:column;gap:4px;position:relative}
+.m-menu-links a{
+  font-family:'Playfair Display',serif;font-size:clamp(18px,5vw,26px);
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mist);padding:16px 0;
+  border-bottom:1px solid rgba(217,217,217,.07);
+  transform:translateX(20px);opacity:0;
+  transition:transform .4s,opacity .4s,color .3s;
+  display:block;text-decoration:none;
+}
+.m-menu.open .m-menu-links a{transform:translateX(0);opacity:1}
+.m-menu-links a:last-child{border-bottom:none}
+.m-menu-links a:hover{color:var(--light)}
+.m-menu-links a:nth-child(1){transition-delay:.18s}
+.m-menu-links a:nth-child(2){transition-delay:.26s}
+.m-menu-links a:nth-child(3){transition-delay:.34s}
+.m-menu-links a:nth-child(4){transition-delay:.42s}
+.m-menu-links a:nth-child(5){transition-delay:.5s}
+.m-menu-links a:nth-child(6){transition-delay:.58s}
+.m-menu-footer{position:absolute;bottom:40px;left:40px;font-family:'Inter',sans-serif;font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:rgba(140,140,140,.4)}
+.m-menu-contacts{margin-top:32px;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.2em;color:rgba(140,140,140,.6);text-transform:uppercase;position:relative}
+.m-menu-close{position:fixed;top:18px;right:20px;z-index:210;background:none;border:none;color:var(--light);font-size:22px;cursor:pointer;display:none}
+.m-menu-close.visible{display:block}
+
+/* cookie banner */
+#cookie-banner{
+  position:fixed;bottom:0;left:0;right:0;z-index:999;
+  background:rgba(5,5,5,.97);backdrop-filter:blur(8px);
+  border-top:1px solid rgba(140,140,140,.25);
+  padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  font-family:'Inter',system-ui,sans-serif;
+  transform:translateY(0);transition:transform .4s ease;
+}
+#cookie-banner.hidden{transform:translateY(110%)}
+#cookie-banner p{color:var(--steel);font-size:13px;line-height:1.6;margin:0}
+#cookie-banner a{color:var(--light);text-decoration:none}
+#cookie-banner a:hover{text-decoration:underline}
+.cookie-actions{display:flex;gap:12px;flex-shrink:0}
+.cookie-btn{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;padding:10px 20px;cursor:pointer;border:none;transition:all .3s;white-space:nowrap}
+.cookie-btn-accept{background:var(--light);color:var(--void)}
+.cookie-btn-accept:hover{opacity:.85}
+.cookie-btn-more{background:transparent;color:var(--steel);border:1px solid rgba(140,140,140,.4)}
+.cookie-btn-more:hover{border-color:var(--light);color:var(--light)}
+@media(max-width:600px){
+  #cookie-banner{flex-direction:column;align-items:flex-start;gap:14px}
+  .cookie-actions{width:100%}
+  .cookie-btn{flex:1;text-align:center}
+}
+
+#back-to-top{position:fixed;bottom:28px;right:24px;width:44px;height:44px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:var(--light);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(10px);transition:all .3s;z-index:40;backdrop-filter:blur(4px)}
+#back-to-top.visible{opacity:1;transform:translateY(0)}
+#back-to-top:hover{background:rgba(255,255,255,.16)}
+
+.thanks-modal{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.75);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .4s}
+.thanks-modal.open{opacity:1;pointer-events:all}
+.thanks-box{background:var(--ink);border:1px solid rgba(255,255,255,.15);padding:52px 44px;max-width:440px;width:90%;text-align:center;transform:translateY(20px);transition:transform .4s}
+.thanks-modal.open .thanks-box{transform:translateY(0)}
+.thanks-icon{font-size:32px;margin-bottom:20px;color:var(--light)}
+.thanks-box h3{font-family:'Playfair Display',serif;font-weight:500;font-size:20px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;color:var(--light)}
+.thanks-box p{color:var(--steel);font-size:14px;line-height:1.7;margin-bottom:28px}
+.thanks-close{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;background:var(--light);color:var(--void);border:none;padding:13px 28px;cursor:pointer;transition:opacity .3s}
+.thanks-close:hover{opacity:.85}
+
+.tg-widget{position:fixed;bottom:28px;left:24px;z-index:60;display:flex;align-items:center;gap:12px;opacity:0;transform:translateY(10px);transition:all .4s;pointer-events:none}
+.tg-widget.visible{opacity:1;transform:translateY(0);pointer-events:all}
+.tg-bubble{background:var(--ink);border:1px solid rgba(255,255,255,.15);color:var(--mist);font-size:12.5px;padding:10px 16px;border-radius:2px;white-space:nowrap;opacity:0;transition:opacity .4s}
+.tg-bubble.visible{opacity:1}
+.tg-btn{width:48px;height:48px;background:var(--light);color:var(--void);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0}
+.tg-btn svg{width:24px;height:24px}
+@media(max-width:600px){.tg-bubble{display:none}}
+
+@media(max-width:600px) and (min-width:431px){
+  h1{letter-spacing:.06em}
+  .wrap{padding:0 20px}
+  .ev-date{font-size:clamp(26px,7vw,36px)}
+}
+@media(max-width:430px){
+  h1{font-size:clamp(20px,8vw,30px);letter-spacing:.04em}
+  h2{font-size:clamp(15px,5vw,20px)}
+  .wrap{padding:0 16px}
+  .eyebrow{font-size:10px;letter-spacing:.26em}
+  nav .logo{font-size:12px;letter-spacing:.22em}
+  section{padding:60px 0}
+  .m-menu{padding:70px 24px 40px}
+}
+@media(max-width:760px){
+  table{width:100%;display:block;overflow-x:auto}
+  .grid{grid-template-columns:1fr!important}
+  .flag{grid-template-columns:1fr!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "КОМНАТА СВЕТА",
+      "url": "https://komnata-sveta.ru",
+      "description": "Театральная компания из Петербурга. Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова.",
+      "sameAs": [
+        "https://t.me/lightroom_theatre",
+        "https://t.me/bu_fest"
+      ]
+    },
+    {
+      "@type": "Festival",
+      "name": "БУФЕСТ 2026",
+      "description": "Петербургский театральный фестиваль имени Юрия Бутусова. Три спектакля его учеников. 10–15 августа 2026, площадка «Скороход».",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-15",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Площадка «Скороход»",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Московский пр., 107, корп. 5",
+          "addressLocality": "Санкт-Петербург",
+          "addressCountry": "RU"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "КОМНАТА СВЕТА",
+        "url": "https://komnata-sveta.ru"
+      },
+      "url": "https://komnata-sveta.ru/bufest"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="/">Комната<small>Света</small></a>
+    <div class="nav-links">
+      <a href="/bufest">БуФест</a>
+      <a href="/about">О компании</a>
+      <a href="/team">Команда</a>
+      <a href="/collaboration">Сотрудничество</a>
+      <a href="/contacts">Контакты</a>
+    </div>
+    <button class="burger" aria-label="Меню" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="portal" aria-hidden="true"><div class="portal-frame"></div></div>
+  <div class="hero-a" aria-hidden="true">К</div>
+  <h1>Комната Света</h1>
+  <p class="sub">Театральная компания из Петербурга</p>
+  <div class="hero-next">
+    <span class="eyebrow">Организатор фестиваля</span>
+    <span class="date-line">10–15 августа · БуФест · площадка «Скороход»</span>
+    <a href="/bufest">О фестивале</a>
+  </div>
+</header>
+
+<section id="bufest">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>БуФест 2026</h2></div>
+
+    <div class="event reveal">
+      <div class="ev-date">10–11.08<small>Скороход</small></div>
+      <div class="ev-info">
+        <h3>«Вий. Домыслы»</h3>
+        <p>Режиссёр — Александр Цереня, по мотивам Н.В. Гоголя</p>
+      </div>
+      <a class="ev-cta" href="/viy">О спектакле</a>
+    </div>
+
+    <div class="event reveal">
+      <div class="ev-date">12–13.08<small>Скороход</small></div>
+      <div class="ev-info">
+        <h3>«Вишнёвый сад»</h3>
+        <p>Режиссёр — Егор Ковалёв</p>
+      </div>
+      <a class="ev-cta" href="/cherry">О спектакле</a>
+    </div>
+
+    <div class="event reveal">
+      <div class="ev-date">14–15.08<small>Скороход</small></div>
+      <div class="ev-info">
+        <h3>«Чайка»</h3>
+        <p>Режиссёр — Илья Зайцев</p>
+      </div>
+      <a class="ev-cta" href="/seagull">О спектакле</a>
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-top:48px">
+      <a class="btn" href="/bufest">Вся программа фестиваля</a>
+    </div>
+  </div>
+</section>
+
+<section id="flagman" style="padding-top:20px">
+  <div class="wrap">
+    <div class="flag reveal">
+      <div class="flag-visual"><span>24.09.1961 — 09.08.2025</span></div>
+      <div>
+        <span class="eyebrow">Фестиваль его памяти</span>
+        <h3>Юрий Бутусов</h3>
+        <p>Режиссёр Театра им. Ленсовета и Театра им. Вахтангова, воспитавший тех, кто сегодня выходит на сцену БуФеста — фестиваля в городе, где он работал.</p>
+        <p class="quote">Театр, который он успел передать</p>
+        <a class="btn-ghost" href="/butusov">Читать о нём</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="manifest">
+  <div class="wrap reveal">
+    <p class="big">Мы любим театр и создаём его с <em>такими же влюблёнными людьми</em>, как и мы</p>
+    <div class="values">
+      <span>Свет</span><span>Контраст</span><span>Пространство</span><span>Тишина</span><span>Тень</span>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>О компании</h2></div>
+    <div class="grid">
+      <a href="/about" class="card reveal">
+        <div><span class="tag">Арт-проект</span><h3>Кто мы</h3>
+        <p>Театральная компания из Петербурга. До БуФеста — проект «ZAVIST'» и первые гастроли Мастерской Юрия Бутусова.</p></div>
+      </a>
+      <a href="/team" class="card reveal">
+        <div><span class="tag">Люди</span><h3>Команда</h3>
+        <p>Кряжева, Мошников, Журавлёва, Виноградова, Гроник, Кряжев, Фунтов — команда «Комнаты света».</p></div>
+      </a>
+      <a href="/projects" class="card reveal">
+        <div><span class="tag">Проект</span><h3>ZAVIST'</h3>
+        <p>Предыдущий проект команды, который полюбили зрители — до того, как появился БуФест.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="collab" style="padding-top:20px;background:var(--ink)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">03</span><h2>Сотрудничество</h2></div>
+    <div class="flag reveal" style="grid-template-columns:1.2fr 1fr">
+      <div>
+        <span class="eyebrow">Площадкам, партнёрам, артистам</span>
+        <h3 style="font-size:clamp(20px,3vw,28px)">Расскажите о своей идее</h3>
+        <p>Гастроли, партнёрство, специальные показы, совместные проекты — читаем всё и отвечаем через Telegram-бота.</p>
+        <a class="btn" href="/collaboration">Написать нам</a>
+      </div>
+      <div class="flag-visual"><span>Сотрудничество</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="subscribe" id="subscribe">
+  <div class="wrap reveal">
+    <span class="eyebrow">Не пропустить</span>
+    <h2 style="margin-top:14px">Первыми узнавайте о показах</h2>
+    <p>Старт продаж, новые спектакли и закулисье БуФеста — коротко и по делу, без спама.</p>
+    <div class="sub-form">
+      <input type="email" id="subEmail" placeholder="Ваша почта" aria-label="Электронная почта">
+      <button onclick="subscribe()">Подписаться</button>
+    </div>
+    <p class="sub-ok" id="subOk">Готово — напишем, как только откроются продажи.</p>
+  </div>
+</section>
+
+<footer id="contacts">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>КОМНАТА СВЕТА</h4>
+        <a href="https://t.me/lightroom_theatre" target="_blank" rel="noopener">Telegram компании</a>
+        <a href="/team" style="margin-top:14px">Команда</a>
+        <a href="/about">О компании</a>
+      </div>
+      <div>
+        <h4>БуФест</h4>
+        <a href="/bufest">О фестивале</a>
+        <a href="/tickets">Афиша и билеты</a>
+        <a href="https://t.me/bu_fest" target="_blank" rel="noopener">Telegram фестиваля</a>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="/collaboration">Сотрудничество</a>
+        <a href="/partners">Партнёры</a>
+        <a href="/archive">Архив показов</a>
+        <a href="/contacts">Контакты</a>
+      </div>
+    </div>
+    <div class="requisites">
+      Театральная компания «Комната Света» · Санкт-Петербург<br>
+      Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова<br>
+      © 2026 КОМНАТА СВЕТА<br>
+      <a href="/documents">Правовые документы</a> · <a href="/oferta">Оферта</a> · <a href="/privacy">Конфиденциальность</a> · <a href="/cookies">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const TG_WORKER = 'https://YOUR-WORKER-SUBDOMAIN.workers.dev'; // TODO: адрес воркера komnata-bot после деплоя
+  const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID'; // TODO: форма Formspree для «Комнаты света»
+
+  async function sendFormspree(formName, fields) {
+    try {
+      var data = new FormData();
+      data.append('_subject', '[KOMNATA SVETA] ' + formName);
+      var keys = Object.keys(fields);
+      for (var i = 0; i < keys.length; i++) {
+        data.append(keys[i], String(fields[keys[i]] || '').trim());
+      }
+      await fetch(FORMSPREE_URL, { method: 'POST', body: data, headers: {'Accept': 'application/json'} });
+    } catch(e) { console.log('Formspree error:', e); }
+  }
+
+  async function sendTelegram(formName, fields) {
+    var lines = ['[KOMNATA SVETA] ' + formName, ''];
+    var keys = Object.keys(fields);
+    for (var i = 0; i < keys.length; i++) {
+      var label = keys[i];
+      var value = String(fields[label] || '').trim();
+      if (value) lines.push('<b>' + label + ':</b> ' + value);
+    }
+    lines.push('');
+    lines.push(new Date().toLocaleString('ru-RU', {timeZone:'Europe/Moscow'}));
+    var msgText = lines.join('\n');
+    try {
+      await fetch(TG_WORKER, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({text: msgText}) });
+    } catch(e) { console.log('TG error:', e); }
+  }
+
+  async function subscribe(){
+    const v = document.getElementById('subEmail').value.trim();
+    if(!v || !v.includes('@')) return;
+    await sendTelegram('Главная — подписка на показы', {'Email': v});
+    await sendFormspree('Главная — подписка на показы', {'Email': v});
+    document.getElementById('subOk').style.display = 'block';
+    document.getElementById('subEmail').value = '';
+  }
+
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const lineIO = new IntersectionObserver(es=>{
+    es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('line-on')}})
+  },{threshold:.5});
+  document.querySelectorAll('.sec-head').forEach(el=>lineIO.observe(el));
+
+  function handleOverlayClick(e){
+    if(!e.target.closest('.m-menu-links')&&!e.target.closest('.m-menu-contacts')){ toggleMenu(); }
+  }
+  function toggleMenu(){
+    const btn = document.querySelector('.burger');
+    const menu = document.getElementById('mMenu');
+    const close = document.getElementById('close-btn');
+    if(!btn||!menu) return;
+    const isOpen = menu.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    if(close) close.classList.toggle('visible', isOpen);
+  }
+  document.addEventListener('keydown', e=>{
+    if(e.key==='Escape'){
+      const menu = document.getElementById('mMenu');
+      const btn = document.querySelector('.burger');
+      if(menu&&menu.classList.contains('open')){
+        menu.classList.remove('open'); btn&&btn.classList.remove('open'); document.body.style.overflow='';
+      }
+    }
+  });
+
+  setTimeout(function(){
+    document.querySelectorAll('.reveal:not(.on)').forEach(function(el){ el.classList.add('on'); });
+    document.querySelectorAll('.sec-head:not(.line-on)').forEach(function(el){ el.classList.add('line-on'); });
+  }, 700);
+
+  (function(){
+    const path = window.location.pathname.replace(/\/$/,'') || '/';
+    document.querySelectorAll('.nav-links a, .m-menu-links a').forEach(a => {
+      const href = a.getAttribute('href').replace(/\/$/,'') || '/';
+      if(href === path) a.classList.add('active');
+    });
+  })();
+
+  function showThanks(){
+    const m=document.getElementById('thanks-modal');
+    if(m){m.classList.add('open');setTimeout(()=>m.classList.remove('open'),5000);}
+  }
+</script>
+
+<div class="m-menu" id="mMenu" role="dialog" aria-modal="true" aria-label="Навигация" onclick="handleOverlayClick(event)">
+  <nav class="m-menu-links">
+    <a href="/bufest" onclick="toggleMenu()">БуФест</a>
+    <a href="/about" onclick="toggleMenu()">О компании</a>
+    <a href="/team" onclick="toggleMenu()">Команда</a>
+    <a href="/partners" onclick="toggleMenu()">Партнёры</a>
+    <a href="/collaboration" onclick="toggleMenu()">Сотрудничество</a>
+    <a href="/contacts" onclick="toggleMenu()">Контакты</a>
+  </nav>
+  <div class="m-menu-contacts">t.me/lightroom_theatre</div>
+  <div class="m-menu-footer">КОМНАТА СВЕТА © 2026</div>
+</div>
+
+<div id="cookie-banner">
+  <p>Мы используем cookies для аналитики и улучшения сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="/cookies">политикой cookies</a> и <a href="/privacy">политикой конфиденциальности</a>.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-more" onclick="window.location.href='/cookies'">Подробнее</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Принять</button>
+  </div>
+</div>
+<script>
+  (function(){
+    if(localStorage.getItem('cookies_accepted')){
+      var b=document.getElementById('cookie-banner');
+      if(b) b.style.display='none';
+    }
+  })();
+  function acceptCookies(){
+    localStorage.setItem('cookies_accepted','1');
+    var b=document.getElementById('cookie-banner');
+    if(b){b.classList.add('hidden');setTimeout(function(){b.style.display='none'},400);}
+  }
+</script>
+
+<button id="back-to-top" aria-label="Наверх" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+  window.addEventListener('scroll',()=>{
+    const btn=document.getElementById('back-to-top');
+    if(btn) btn.classList.toggle('visible', window.scrollY > 400);
+  });
+</script>
+
+<div class="thanks-modal" id="thanks-modal">
+  <div class="thanks-box">
+    <div class="thanks-icon">✦</div>
+    <h3>Спасибо</h3>
+    <p>Ваше сообщение получено. Мы свяжемся с вами в течение рабочего дня.</p>
+    <button class="thanks-close" onclick="document.getElementById('thanks-modal').classList.remove('open')">Закрыть</button>
+  </div>
+</div>
+
+<div class="tg-widget" id="tg-widget">
+  <div class="tg-bubble" id="tg-bubble">Напишите нам — бот ответит мгновенно</div>
+  <a class="tg-btn" href="https://t.me/lightroom_theatre" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.093 13.68l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.836.88h.219z"/></svg>
+    Написать нам
+  </a>
+</div>
+<script>
+  window.addEventListener('scroll', function(){
+    const widget = document.getElementById('tg-widget');
+    if(!widget) return;
+    if(window.scrollY > 400){
+      widget.classList.add('visible');
+      const bubble = document.getElementById('tg-bubble');
+      if(bubble && !bubble.dataset.shown){
+        bubble.dataset.shown = '1';
+        setTimeout(function(){
+          bubble.classList.add('visible');
+          setTimeout(function(){ bubble.classList.remove('visible'); }, 4000);
+        }, 1000);
+      }
+    } else { widget.classList.remove('visible'); }
+  });
+</script>
+
+<button class="m-menu-close" id="close-btn" onclick="toggleMenu()" aria-label="Закрыть меню">✕</button>
+<script src="/assets/analytics-events.js"></script>
+</body>
+</html>

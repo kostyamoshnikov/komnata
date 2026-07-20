@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Юридические страницы — не индексировать
+Disallow: /oferta
+Disallow: /privacy
+Disallow: /cookies
+
+Sitemap: https://komnata-sveta.ru/sitemap.xml
