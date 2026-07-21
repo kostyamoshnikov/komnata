@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Вий. Домыслы — спектакль КОМНАТА СВЕТА на БУФЕСТе</title>
-<meta name="description" content="«Вий. Домыслы» — спектакль Александра Церени по мотивам произведений Гоголя. БУФЕСТ 2026, 10–11 августа, площадка «Скороход». 16+">
+<title>БуФест 2026 — Петербургский театральный фестиваль им. Юрия Бутусова</title>
+<meta name="description" content="БуФест 2026 — театральный фестиваль памяти Юрия Бутусова. 10–15 августа, площадка «Скороход»: «Вий. Домыслы», «Вишнёвый сад», «Чайка». Организатор — КОМНАТА СВЕТА.">
 
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
@@ -14,13 +14,13 @@
 <meta name="theme-color" content="#050505">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Вий. Домыслы — спектакль КОМНАТА СВЕТА на БУФЕСТе">
-<meta property="og:description" content="По мотивам произведений Н.В. Гоголя. Режиссёр Александр Цереня. 10–11 августа 2026, площадка «Скороход».">
+<meta property="og:title" content="БуФест 2026 — Петербургский театральный фестиваль им. Юрия Бутусова">
+<meta property="og:description" content="10–15 августа, площадка «Скороход»: «Вий. Домыслы», «Вишнёвый сад», «Чайка». Памяти Юрия Бутусова.">
 <meta property="og:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<meta property="og:url" content="https://komnata-sveta.ru/viy">
+<meta property="og:url" content="https://komnata-sveta.ru/bufest">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<link rel="canonical" href="https://komnata-sveta.ru/viy">
+<link rel="canonical" href="https://komnata-sveta.ru/bufest">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,30 +99,55 @@ section{padding:90px 0;position:relative}
 .about-text p{color:var(--steel);max-width:74ch;margin-bottom:20px;font-size:15.5px}
 .about-text p:last-child{margin-bottom:0}
 
-/* ── cast / crew ─────────────────────────── */
-.cast-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:rgba(217,217,217,.06)}
-.cast-card{background:var(--ink);padding:28px 26px}
-.cast-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);margin-bottom:10px}
-.cast-name{font-size:17px;color:var(--light);line-height:1.5}
+/* ── афиша БуФеста ─────────────────────────── */
+.event{
+  display:grid;grid-template-columns:150px 1fr auto;gap:28px;align-items:center;
+  padding:34px 0;border-bottom:1px solid rgba(217,217,217,.09);
+}
+.event:first-of-type{border-top:1px solid rgba(217,217,217,.09)}
+.ev-date{font-family:'Playfair Display',serif;font-weight:500;font-size:32px;color:var(--light);line-height:1.15}
+.ev-date small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.28em;color:var(--steel);text-transform:uppercase;margin-top:4px}
+.ev-info h3{font-size:17px;letter-spacing:.14em;font-weight:500;margin-bottom:6px;color:var(--light);text-transform:uppercase}
+.ev-info p{color:var(--steel);font-size:14px}
+.ev-cta{
+  font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--steel);border:1px solid rgba(140,140,140,.4);
+  padding:13px 22px;text-decoration:none;white-space:nowrap;transition:all .3s;
+}
+.ev-cta:hover{border-color:var(--light);color:var(--light);text-shadow:0 0 10px rgba(255,255,255,.4)}
+@media(max-width:760px){
+  .event{grid-template-columns:1fr;gap:12px}
+  .ev-cta{justify-self:start;white-space:normal;text-align:center}
+}
 
+/* ── флагман: Бутусов ─────────────────────────── */
+.flag{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.flag-visual{
+  aspect-ratio:3/4;background:var(--ink);position:relative;overflow:hidden;
+  display:flex;align-items:flex-end;padding:34px;
+  border-right:2px solid var(--steel);border-bottom:2px solid var(--steel);
+}
+.flag-visual::before{
+  content:"";position:absolute;inset:24px;
+  border:2px solid var(--steel);border-bottom:none;opacity:.5;
+}
+.flag-visual span{
+  font-family:'Inter',sans-serif;letter-spacing:.34em;font-size:12px;
+  text-transform:uppercase;color:var(--mist);position:relative;
+}
+.flag h3{font-size:clamp(24px,4vw,38px);letter-spacing:.1em;margin-bottom:26px;line-height:1.3;color:var(--light)}
+.flag p{color:var(--steel);max-width:48ch;margin-bottom:18px}
+.flag .quote{
+  border-left:1px solid var(--light);padding-left:22px;
+  color:var(--mist);font-style:normal;margin:32px 0;
+  font-size:15px;letter-spacing:.04em;
+}
+@media(max-width:900px){.flag{grid-template-columns:1fr;gap:36px}}
+
+/* ── crew grid (переиспользуется для «Место и время») ── */
 .crew-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px 40px;margin-bottom:48px}
 .crew-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
 .crew-name{font-size:15px;color:var(--mist)}
-.crew-name small{display:block;font-size:12px;color:var(--steel);margin-top:4px}
-
-/* ── warning ─────────────────────────── */
-.warning{border:1px solid rgba(217,217,217,.14);border-left:3px solid var(--light);padding:26px 30px;background:var(--ink)}
-.warning .wl{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--light);margin-bottom:12px}
-.warning p{color:var(--steel);font-size:14px;line-height:1.75}
-
-/* ── карточки других спектаклей ─────────────────────────── */
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--ink);padding:30px 26px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;border-right:2px solid var(--steel);border-bottom:2px solid var(--steel);transition:border-color .35s,box-shadow .35s}
-.card:hover{border-color:var(--light);box-shadow:0 0 40px -12px rgba(255,255,255,.25)}
-.card .tag{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--steel);font-family:'Inter',sans-serif}
-.card h3{font-size:17px;letter-spacing:.08em;font-weight:500;margin:14px 0 0;color:var(--light);text-transform:uppercase}
-a.card{color:inherit;text-decoration:none;display:block}
-@media(max-width:900px){.grid3{grid-template-columns:1fr}}
 
 /* footer */
 footer{padding:80px 0 46px;border-top:1px solid rgba(217,217,217,.08)}
@@ -193,21 +218,38 @@ footer p{color:var(--steel);font-size:14px}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TheaterEvent",
-  "name": "Вий. Домыслы",
-  "description": "По мотивам произведений Н.В. Гоголя. Режиссёр Александр Цереня.",
-  "startDate": "2026-08-10T20:00",
-  "endDate": "2026-08-11T20:00",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "Скороход",
-    "address": "Московский пр., 107, корп. 5, Санкт-Петербург"
-  },
-  "director": {"@type": "Person", "name": "Александр Цереня"},
-  "organizer": {"@type": "Organization", "name": "КОМНАТА СВЕТА", "url": "https://komnata-sveta.ru"},
-  "isPartOf": {"@type": "Festival", "name": "БУФЕСТ 2026"}
+  "@graph": [
+    {
+      "@type": "Festival",
+      "name": "БУФЕСТ 2026",
+      "description": "Петербургский театральный фестиваль имени Юрия Бутусова. Три спектакля его учеников. 10–15 августа 2026, площадка «Скороход».",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-15",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Площадка «Скороход»",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Московский пр., 107, корп. 5",
+          "addressLocality": "Санкт-Петербург",
+          "addressCountry": "RU"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "КОМНАТА СВЕТА",
+        "url": "https://komnata-sveta.ru"
+      },
+      "subEvent": [
+        {"@type": "TheaterEvent", "name": "Вий. Домыслы", "startDate": "2026-08-10T20:00", "url": "https://komnata-sveta.ru/viy"},
+        {"@type": "TheaterEvent", "name": "Вишнёвый сад", "startDate": "2026-08-12T20:00", "url": "https://komnata-sveta.ru/cherry"},
+        {"@type": "TheaterEvent", "name": "Чайка", "startDate": "2026-08-14T20:00", "url": "https://komnata-sveta.ru/seagull"}
+      ],
+      "url": "https://komnata-sveta.ru/bufest"
+    }
+  ]
 }
 </script>
 </head>
@@ -218,7 +260,7 @@ footer p{color:var(--steel);font-size:14px}
     <a class="logo" href="/"><img class="logo-mark" src="../assets/img/logo-icon-light-sm.png" alt="Комната света">Комната<small>Света</small></a>
     <div class="nav-links">
       <a href="/about">О компании</a>
-      <a href="../bufest/" class="active">БуФест</a>
+      <a href="./" class="active">БуФест</a>
       <a href="/team">Команда</a>
       <a href="/partners">Партнёры</a>
       <a href="/collaboration">Сотрудничество</a>
@@ -231,92 +273,82 @@ footer p{color:var(--steel);font-size:14px}
 </nav>
 
 <div class="wrap crumb">
-  <a href="/">Комната Света</a><span class="sep">/</span><a href="../bufest/">БуФест</a><span class="sep">/</span><span class="here">Вий. Домыслы</span>
+  <a href="/">Комната Света</a><span class="sep">/</span><span class="here">БуФест</span>
 </div>
 
 <div class="wrap show-hero">
-  <p class="eyebrow reveal">БУФЕСТ 2026 · 10–11 августа</p>
-  <h1 class="reveal">Вий.<br>Домыслы</h1>
-  <p class="show-sub reveal">По мотивам произведений Н.В. Гоголя</p>
+  <p class="eyebrow reveal">10–15 августа 2026 · площадка «Скороход»</p>
+  <h1 class="reveal">БуФест</h1>
+  <p class="show-sub reveal">Петербургский театральный фестиваль имени Юрия Бутусова. Три спектакля его учеников — памяти режиссёра, который их этому научил.</p>
 
   <div class="meta-row reveal">
-    <div class="mi"><div class="ml">Режиссёр</div><div class="mv"><a href="#team">Александр Цереня</a></div></div>
-    <div class="mi"><div class="ml">Продолжительность</div><div class="mv">1 час 20 минут</div></div>
-    <div class="mi"><div class="ml">Антракт</div><div class="mv">Без антракта</div></div>
+    <div class="mi"><div class="ml">Даты</div><div class="mv">10–15 августа 2026</div></div>
+    <div class="mi"><div class="ml">Площадка</div><div class="mv">Скороход, СПб</div></div>
+    <div class="mi"><div class="ml">Начало показов</div><div class="mv">20:00</div></div>
     <div class="mi"><div class="ml">Возраст</div><div class="mv">16+</div></div>
   </div>
 
   <div class="ticket-btns reveal">
-    <a href="https://clck.ru/3Th2tT" class="btn" target="_blank" rel="noopener">Билеты на 10 августа</a>
-    <a href="https://clck.ru/3Th2yk" class="btn-ghost" target="_blank" rel="noopener">Билеты на 11 августа</a>
+    <a href="https://komnata-sveta.ru/page16" class="btn" target="_blank" rel="noopener">Афиша и билеты</a>
   </div>
 </div>
 
 <section id="about">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>О спектакле</h2></div>
+    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>О фестивале</h2></div>
     <div class="about-text reveal">
-      <p>Повесть Гоголя «Вий» без малого двести лет тревожит воображение читателей. Кто такой Вий? Почему так тяжелы его веки и страшен взгляд? Мог ли Хома спастись, если бы не побоялся нечисти?</p>
-      <p><a href="#team">Александр Цереня</a> заглянул в отверстые очи гоголевского персонажа — и увидел там не мёртвую бессмысленную тьму, а обманутую любовь, погибшую красоту и живое страдание.</p>
-      <p>Маленькая смешливая Панночка в балетной пачке разминается у станка: «Un, deux, trois, quatre!» В эпизоде третьей ночи режиссёр монтирует в ткань повести фрагмент гоголевской «Женитьбы» — объяснение Подколесина с Агафьей Тихоновной. Хома и Панночка ведут этот диалог. И из него тоже, известное дело, ничего путного не выйдет.</p>
-      <p>Гоголевская мистерия и поэтическое переосмысление канонического сюжета — на манер балетного класса.</p>
+      <p>Несколько лет «Комната света» проводила гастроли Мастерской Юрия Николаевича Бутусова. Пришло время перемен — в этом году формат сменился на большой фестиваль БуФест, посвящённый Юрию Бутусову.</p>
+      <p>Помимо спектаклей запланированы специальные события: показы фильмов, лекции, экскурсии. Полная программа публикуется на сайте.</p>
+      <p>10–15 августа, площадка «Скороход» — Петербургский театральный фестиваль им. Юрия Бутусова «БуФест».</p>
     </div>
   </div>
 </section>
 
-<section id="cast" style="background:var(--ink)">
+<section id="program" style="background:var(--ink)">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>Действующие лица и исполнители</h2></div>
-    <div class="cast-grid reveal">
-      <div class="cast-card">
-        <div class="cast-role">Философ Хома</div>
-        <div class="cast-name">Николай Рысев</div>
+    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>Программа</h2></div>
+
+    <div class="event reveal">
+      <div class="ev-date">10–11.08<small>Скороход</small></div>
+      <div class="ev-info">
+        <h3>«Вий. Домыслы»</h3>
+        <p>Режиссёр — Александр Цереня, по мотивам Н.В. Гоголя</p>
       </div>
-      <div class="cast-card">
-        <div class="cast-role">Панночка</div>
-        <div class="cast-name">Вера Енгалычева</div>
+      <a class="ev-cta" href="../viy/">О спектакле</a>
+    </div>
+
+    <div class="event reveal">
+      <div class="ev-date">12–13.08<small>Скороход</small></div>
+      <div class="ev-info">
+        <h3>«Вишнёвый сад»</h3>
+        <p>Режиссёр — Егор Ковалёв, по пьесе А.П. Чехова</p>
       </div>
-      <div class="cast-card">
-        <div class="cast-role">Отец (Сотник)</div>
-        <div class="cast-name">Иван Орлов</div>
+      <a class="ev-cta" href="../cherry/">О спектакле</a>
+    </div>
+
+    <div class="event reveal">
+      <div class="ev-date">14–15.08<small>Скороход</small></div>
+      <div class="ev-info">
+        <h3>«Чайка»</h3>
+        <p>Режиссёр — Илья Зайцев, по пьесе А.П. Чехова</p>
       </div>
-      <div class="cast-card">
-        <div class="cast-role">Вий</div>
-        <div class="cast-name">Евгения Леонова<br>Ксения Галибина<br>Мария Денисова</div>
-      </div>
+      <a class="ev-cta" href="../seagull/">О спектакле</a>
     </div>
   </div>
 </section>
 
-<section id="team">
+<section id="butusov">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">03</span><h2>Постановочная группа</h2></div>
-    <div class="crew-grid reveal">
+    <div class="sec-head reveal"><span class="eyebrow">03</span><h2>Памяти Юрия Бутусова</h2></div>
+    <div class="flag reveal">
+      <div class="flag-visual"><span>24.09.1961 — 09.08.2025</span></div>
       <div>
-        <div class="crew-role">Режиссёр</div>
-        <div class="crew-name">Александр Цереня<small>выпускник мастерской Юрия Бутусова</small></div>
+        <h3>Юрий Бутусов</h3>
+        <p>Главный режиссёр и художественный руководитель Театра им. Ленсовета (2011—2018), главный режиссёр Театра им. Вахтангова (2018—2022). С 2002 года ставил в «Сатириконе».</p>
+        <p class="quote">Театр, который он успел передать</p>
+        <p>БуФест объединяет тех, кто сегодня выходит на сцену, продолжая его школу — в городе, где он работал.</p>
+        <a class="btn-ghost" href="/butusov">Читать о нём</a>
       </div>
-      <div>
-        <div class="crew-role">Художник (пространство)</div>
-        <div class="crew-name">Нанна Шех</div>
-      </div>
-      <div>
-        <div class="crew-role">Хореограф</div>
-        <div class="crew-name">Александр Шуйский</div>
-      </div>
-      <div>
-        <div class="crew-role">Саунд-дизайнер</div>
-        <div class="crew-name">Алия Гришель</div>
-      </div>
-      <div>
-        <div class="crew-role">Свет</div>
-        <div class="crew-name">Иван Шалаев</div>
-      </div>
-    </div>
-
-    <div class="warning reveal">
-      <div class="wl">Важная информация</div>
-      <p>В спектакле используются натуральные материалы: сухие растения — розы, гортензии, лизиантусы, дельфиниум, эвкалипт, полевые цветы, травы, рогоз. Если у вас аллергия на пыльцу — пожалуйста, учтите заранее.</p>
     </div>
   </div>
 </section>
@@ -325,33 +357,13 @@ footer p{color:var(--steel);font-size:14px}
   <div class="wrap">
     <div class="sec-head reveal"><span class="eyebrow">04</span><h2>Место и время</h2></div>
     <div class="crew-grid reveal">
-      <div><div class="crew-role">Даты</div><div class="crew-name" style="font-size:18px">10 и 11 августа 2026</div></div>
-      <div><div class="crew-role">Начало</div><div class="crew-name" style="font-size:18px">20:00</div></div>
+      <div><div class="crew-role">Даты</div><div class="crew-name" style="font-size:18px">10–15 августа 2026</div></div>
+      <div><div class="crew-role">Начало показов</div><div class="crew-name" style="font-size:18px">20:00</div></div>
       <div><div class="crew-role">Площадка</div><div class="crew-name">Скороход<br>Московский пр., 107, корп. 5</div></div>
     </div>
     <div class="ticket-btns reveal">
-      <a href="https://clck.ru/3Th2tT" class="btn" target="_blank" rel="noopener">Билеты на 10 августа</a>
-      <a href="https://clck.ru/3Th2yk" class="btn-ghost" target="_blank" rel="noopener">Билеты на 11 августа</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">05</span><h2>Ещё в программе БуФеста</h2></div>
-    <div class="grid3 reveal">
-      <a href="../cherry/" class="card">
-        <span class="tag">12–13 августа</span>
-        <h3>Вишнёвый сад</h3>
-      </a>
-      <a href="../seagull/" class="card">
-        <span class="tag">14–15 августа</span>
-        <h3>Чайка</h3>
-      </a>
-      <a href="../bufest/" class="card">
-        <span class="tag">Вся программа</span>
-        <h3>О БуФесте</h3>
-      </a>
+      <a href="https://komnata-sveta.ru/page16" class="btn" target="_blank" rel="noopener">Афиша и билеты</a>
+      <a href="https://t.me/bu_fest" class="btn-ghost" target="_blank" rel="noopener">Telegram фестиваля</a>
     </div>
   </div>
 </section>
@@ -368,7 +380,7 @@ footer p{color:var(--steel);font-size:14px}
       </div>
       <div>
         <h4>БуФест</h4>
-        <a href="../bufest/">О фестивале</a>
+        <a href="./">О фестивале</a>
         <a href="/tickets">Афиша и билеты</a>
         <a href="https://t.me/bu_fest" target="_blank" rel="noopener">Telegram фестиваля</a>
       </div>
@@ -392,7 +404,7 @@ footer p{color:var(--steel);font-size:14px}
 <div class="m-menu" id="mMenu" role="dialog" aria-modal="true" aria-label="Навигация" onclick="handleOverlayClick(event)">
   <nav class="m-menu-links">
     <a href="/about" onclick="toggleMenu()">О компании</a>
-    <a href="../bufest/" onclick="toggleMenu()">БуФест</a>
+    <a href="./" onclick="toggleMenu()">БуФест</a>
     <a href="/team" onclick="toggleMenu()">Команда</a>
     <a href="/partners" onclick="toggleMenu()">Партнёры</a>
     <a href="/collaboration" onclick="toggleMenu()">Сотрудничество</a>
