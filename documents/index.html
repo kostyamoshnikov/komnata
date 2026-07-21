@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Договор публичной оферты — КОМНАТА СВЕТА</title>
-<meta name="description" content="Договор публичной оферты на оказание услуг театральной компании «Комната света».">
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://komnata-sveta.ru/oferta">
+<title>Документы — КОМНАТА СВЕТА</title>
+<meta name="description" content="Правовые документы театральной компании «Комната света»: оферта, политика конфиденциальности, соглашение об использовании cookies.">
+<link rel="canonical" href="https://komnata-sveta.ru/documents">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
 <link rel="icon" href="../favicon.ico">
 <meta name="theme-color" content="#050505">
@@ -75,22 +74,33 @@ nav{
 .crumb span.sep{margin:0 8px;color:rgba(140,140,140,.5)}
 .crumb span.here{color:var(--mist)}
 
-/* ── документ ─────────────────────────── */
+/* ── шапка страницы ─────────────────────────── */
 .doc-head{padding:30px 0 50px;border-bottom:1px solid rgba(217,217,217,.1)}
 .eyebrow{font-family:'Inter',sans-serif;font-size:11px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--steel)}
 h1{font-family:'Playfair Display',serif;font-weight:500;text-transform:uppercase;font-size:clamp(22px,4vw,38px);letter-spacing:.06em;margin-top:16px;line-height:1.3;color:var(--light)}
-.doc-meta{color:var(--steel);font-size:14px;margin-top:14px}
-.doc-body{padding:50px 0 80px}
-.doc-body h2{font-family:'Inter',sans-serif;font-weight:500;text-transform:uppercase;font-size:14px;letter-spacing:.18em;color:var(--light);margin:44px 0 16px}
-.doc-body p{color:var(--mist);font-size:14.5px;margin-bottom:12px}
-.doc-body p strong{color:var(--light);font-weight:400}
-.doc-body ul{color:var(--mist);font-size:14.5px;margin:0 0 12px 20px}
-.doc-body li{margin-bottom:8px}
-.doc-body .req{background:var(--ink);padding:28px;margin-top:30px;font-size:14px;color:var(--mist);line-height:2;border:1px solid rgba(217,217,217,.08)}
-.doc-body .req strong{color:var(--light);font-weight:400}
-.doc-body .placeholder{color:var(--steel);font-style:italic}
+.doc-meta{color:var(--steel);font-size:14px;margin-top:14px;max-width:60ch}
+
+/* ── список документов ─────────────────────────── */
+.doc-list{padding:56px 0 90px}
+.doc-item{
+  display:flex;justify-content:space-between;align-items:flex-start;gap:24px;
+  padding:28px 0;border-top:1px solid rgba(217,217,217,.1);
+  text-decoration:none;color:inherit;transition:opacity .3s;
+}
+.doc-list a.doc-item:hover{opacity:.7}
+.doc-item:last-child{border-bottom:1px solid rgba(217,217,217,.1)}
+.di-num{font-family:'Playfair Display',serif;font-size:20px;color:var(--steel);flex-shrink:0;width:34px}
+.di-body{flex:1}
+.di-title{font-family:'Inter',sans-serif;font-weight:500;font-size:15px;letter-spacing:.06em;color:var(--light);text-transform:uppercase;margin-bottom:6px}
+.di-desc{font-size:14px;color:var(--steel);max-width:56ch}
+.di-arrow{font-size:20px;color:var(--steel);flex-shrink:0;transition:transform .3s,color .3s}
+.doc-item:hover .di-arrow{color:var(--light);transform:translateX(4px)}
+.di-soon{color:rgba(140,140,140,.55)}
+.di-soon .di-title{color:rgba(140,140,140,.7)}
+.di-tag{display:inline-block;margin-left:10px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(140,140,140,.6);border:1px solid rgba(140,140,140,.3);padding:2px 8px;border-radius:2px;vertical-align:middle}
+
 .back-link{
-  display:inline-block;margin-top:40px;
+  display:inline-block;margin-top:8px;
   font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
   color:var(--mist);border:1px solid var(--steel);padding:15px 31px;text-decoration:none;
   transition:all .3s;
@@ -137,6 +147,7 @@ footer a:hover{color:var(--light)}
 #cookie-banner p{color:var(--steel);font-size:13px;line-height:1.6;margin:0}
 #cookie-banner a{color:var(--light);text-decoration:none}
 #cookie-banner a:hover{text-decoration:underline}
+.cookie-actions{display:flex;gap:12px;flex-shrink:0}
 .cookie-btn{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;padding:10px 20px;cursor:pointer;border:none;transition:all .3s;white-space:nowrap}
 .cookie-btn-accept{background:var(--light);color:var(--void)}
 .cookie-btn-accept:hover{opacity:.85}
@@ -150,6 +161,8 @@ footer a:hover{color:var(--light)}
 
 @media(max-width:600px){
   .wrap{padding:0 18px}
+  .doc-item{gap:14px}
+  .di-num{width:26px;font-size:17px}
 }
 </style>
 </head>
@@ -173,76 +186,55 @@ footer a:hover{color:var(--light)}
 </nav>
 
 <div class="wrap crumb">
-  <a href="/">Комната Света</a><span class="sep">/</span><a href="../documents/">Документы</a><span class="sep">/</span><span class="here">Оферта</span>
+  <a href="/">Комната Света</a><span class="sep">/</span><span class="here">Документы</span>
 </div>
 
 <div class="doc-head">
 <div class="wrap">
 <p class="eyebrow">Документы</p>
-<h1>Договор публичной оферты</h1>
-<p class="doc-meta">Санкт-Петербург · редакция от 21.07.2026</p>
+<h1>Правовые документы</h1>
+<p class="doc-meta">Всё, что регулирует работу сайта, покупку билетов и использование Telegram-бота «Комнаты света».</p>
 </div>
 </div>
 
-<div class="doc-body">
+<div class="doc-list">
 <div class="wrap">
 
-<p>Настоящий документ является публичной офертой физического лица — Кряжевой Светланы Вячеславовны, действующей в рамках творческого проекта «Комната света» (далее — «Исполнитель»), и содержит все существенные условия договора возмездного оказания услуг любому дееспособному лицу, принявшему её условия (далее — «Заказчик»).</p>
+  <a class="doc-item" href="../oferta/">
+    <span class="di-num">01</span>
+    <span class="di-body">
+      <span class="di-title">Договор публичной оферты</span>
+      <span class="di-desc">Условия покупки билетов на показы БуФеста и других мероприятий «Комнаты света».</span>
+    </span>
+    <span class="di-arrow">→</span>
+  </a>
 
-<h2>1. Общие положения</h2>
-<p>1.1. Оферта адресована любому дееспособному физическому лицу, выразившему готовность приобрести услуги Исполнителя.</p>
-<p>1.2. Акцептом Оферты признаётся оплата услуг Заказчиком (в том числе покупка билета на показ спектакля или мероприятие фестиваля БуФест) либо иное конклюдентное действие, свидетельствующее о согласии с условиями Оферты. С момента такого действия Договор считается заключённым.</p>
-<p>1.3. Исполнитель: Кряжева Светлана Вячеславовна. Реквизиты указаны в разделе 11 настоящего Договора.</p>
-<p>1.4. Настоящая Оферта может быть изменена Исполнителем в одностороннем порядке. Новая редакция вступает в силу с момента публикации на Сайте.</p>
+  <a class="doc-item" href="../privacy/">
+    <span class="di-num">02</span>
+    <span class="di-body">
+      <span class="di-title">Политика конфиденциальности</span>
+      <span class="di-desc">Как мы обрабатываем персональные данные при покупке билетов, подписке и обращении в бота.</span>
+    </span>
+    <span class="di-arrow">→</span>
+  </a>
 
-<h2>2. Предмет Договора</h2>
-<p>2.1. Исполнитель предоставляет Заказчику доступ к показам спектаклей, мероприятиям фестиваля БуФест (в том числе лекциям, кинопоказам, экскурсиям в его программе) и иным услугам в рамках проекта «Комната света».</p>
-<p>2.2. Продажа билетов на отдельные показы может осуществляться через сторонние билетные сервисы — в этом случае к отношениям Заказчика с такими сервисами применяются их собственные правила и условия.</p>
-<p>2.3. Заказчик оплачивает услуги в порядке и на условиях, установленных настоящим Договором и указанных на странице конкретного показа или мероприятия.</p>
+  <a class="doc-item" href="../cookies/">
+    <span class="di-num">03</span>
+    <span class="di-body">
+      <span class="di-title">Соглашение об использовании cookies</span>
+      <span class="di-desc">Какие файлы cookie использует сайт и как их можно отключить.</span>
+    </span>
+    <span class="di-arrow">→</span>
+  </a>
 
-<h2>3. Права и обязанности сторон</h2>
-<p><strong>3.1. Исполнитель вправе:</strong> изменять программу показов, состав участников, дату, время и место проведения мероприятия с предварительным уведомлением Заказчика; привлекать третьих лиц для организации мероприятий; отказать в допуске на мероприятие при нарушении Заказчиком правил площадки; вносить изменения в настоящую Оферту.</p>
-<p><strong>3.2. Исполнитель обязуется:</strong> обеспечить Заказчику доступ на оплаченное мероприятие при предъявлении билета; своевременно информировать об изменении даты, времени или отмене показа; соблюдать конфиденциальность персональных данных Заказчика в соответствии с <a href="../privacy/">Политикой обработки персональных данных</a>.</p>
-<p><strong>3.3. Заказчик вправе:</strong> получить доступ на оплаченное мероприятие; обращаться за разъяснениями и поддержкой по вопросам оказания услуг.</p>
-<p><strong>3.4. Заказчик обязуется:</strong> оплачивать услуги в полном объёме; предоставлять достоверные данные при бронировании и покупке билета; не передавать билет третьим лицам способом, нарушающим правила площадки; не производить видео- и аудиозапись показа без согласия Исполнителя; соблюдать правила поведения на площадке проведения мероприятия.</p>
+  <span class="doc-item di-soon">
+    <span class="di-num">04</span>
+    <span class="di-body">
+      <span class="di-title">Правила использования бота<span class="di-tag">скоро</span></span>
+      <span class="di-desc">Условия работы с <a href="https://t.me/komnata_sveta_bot" target="_blank" rel="noopener">@komnata_sveta_bot</a> — пока страница готовится, актуальные правила уточняйте напрямую в боте.</span>
+    </span>
+  </span>
 
-<h2>4. Стоимость и порядок оплаты</h2>
-<p>4.1. Стоимость билетов и услуг указывается на странице конкретного показа или мероприятия на Сайте либо на странице соответствующего билетного сервиса.</p>
-<p>4.2. Оплата производится в полном объёме до начала оказания услуги (до даты проведения показа или мероприятия).</p>
-
-<h2>5. Возврат и расторжение Договора</h2>
-<p>5.1. Заявление о возврате стоимости билета направляется на <a href="mailto:lightroom.theatre@gmail.com">lightroom.theatre@gmail.com</a> или через <a href="https://t.me/komnata_sveta_bot" target="_blank" rel="noopener">Telegram-бота</a>. Если билет был приобретён через сторонний билетный сервис, возврат осуществляется в порядке, установленном правилами этого сервиса.</p>
-<p>5.2. При отказе Заказчика от посещения мероприятия по собственной инициативе возврат стоимости билета осуществляется с учётом сроков, установленных законодательством РФ о защите прав потребителей, а также правилами используемого билетного сервиса.</p>
-<p>5.3. В случае отмены или переноса показа по инициативе Исполнителя Заказчику предоставляется полный возврат стоимости билета либо, по желанию Заказчика, обмен на билет на другой показ.</p>
-
-<h2>6. Интеллектуальная собственность</h2>
-<p>6.1. Все материалы постановок, фотографии, видеозаписи и иные материалы, используемые при оказании услуг, являются объектами интеллектуальной собственности Исполнителя либо используются им на законных основаниях.</p>
-<p>6.2. Копирование, распространение, публичное воспроизведение или иное использование таких материалов без письменного согласия Исполнителя запрещено.</p>
-
-<h2>7. Ответственность сторон</h2>
-<p>7.1. Исполнитель несёт ответственность в пределах, установленных законодательством РФ.</p>
-<p>7.2. Исполнитель не несёт ответственности за невозможность оказания услуги по причинам, не зависящим от него (форс-мажор, действия площадки проведения мероприятия, действия третьих лиц, сбои сторонних билетных сервисов).</p>
-<p>7.3. Максимальная ответственность Исполнителя ограничена стоимостью оплаченных, но не оказанных услуг.</p>
-
-<h2>8. Персональные данные</h2>
-<p>Акцептуя настоящую Оферту, Заказчик даёт согласие на обработку персональных данных в соответствии с <a href="../privacy/">Политикой обработки персональных данных</a> Исполнителя.</p>
-
-<h2>9. Разрешение споров</h2>
-<p>Споры решаются путём переговоров. При недостижении согласия — в порядке, установленном законодательством Российской Федерации. Претензии направляются на <a href="mailto:lightroom.theatre@gmail.com">lightroom.theatre@gmail.com</a>.</p>
-
-<h2>10. Заключительные положения</h2>
-<p>Во всём, что не урегулировано настоящим Договором, стороны руководствуются действующим законодательством Российской Федерации.</p>
-
-<h2>11. Реквизиты Исполнителя</h2>
-<div class="req">
-<strong>Кряжева Светлана Вячеславовна</strong><br>
-<span class="placeholder">ИНН: [указать при наличии]</span><br>
-<span class="placeholder">Банковские реквизиты: [указать при наличии]</span><br>
-Контактный e-mail: <a href="mailto:lightroom.theatre@gmail.com">lightroom.theatre@gmail.com</a><br>
-<span class="placeholder">Адрес для корреспонденции: [указать]</span>
-</div>
-
-<p style="margin-top:28px">См. также: <a href="../privacy/">Политика конфиденциальности</a> · <a href="../cookies/">Политика cookies</a> · <a href="../documents/">Все документы</a></p>
 <a class="back-link" href="/">← На главную</a>
 
 </div>
@@ -276,7 +268,7 @@ footer a:hover{color:var(--light)}
       Театральная компания «Комната Света» · Санкт-Петербург<br>
       Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова<br>
       © 2026 КОМНАТА СВЕТА<br>
-      <a href="../documents/">Правовые документы</a> · <a href="../oferta/" class="active">Оферта</a> · <a href="../privacy/">Конфиденциальность</a> · <a href="../cookies/">Cookies</a>
+      <a href="../oferta/">Оферта</a> · <a href="../privacy/">Конфиденциальность</a> · <a href="../cookies/">Cookies</a>
     </div>
   </div>
 </footer>
@@ -297,7 +289,7 @@ footer a:hover{color:var(--light)}
 <div id="cookie-banner">
   <p>Мы используем cookies для аналитики и улучшения сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="../cookies/">политикой cookies</a> и <a href="../privacy/">политикой конфиденциальности</a>.</p>
   <div class="cookie-actions">
-    <button class="cookie-btn cookie-btn-more" onclick="window.location.href='../privacy/'">Подробнее</button>
+    <button class="cookie-btn cookie-btn-more" onclick="window.location.href='../cookies/'">Подробнее</button>
     <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Принять</button>
   </div>
 </div>
