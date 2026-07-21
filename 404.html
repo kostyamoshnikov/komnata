@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — страница не найдена | КОМНАТА СВЕТА</title>
+<meta name="description" content="Страница не найдена. КОМНАТА СВЕТА — театральная компания из Петербурга.">
+<meta name="robots" content="noindex">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="icon" href="favicon.ico">
+<meta name="theme-color" content="#050505">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+html{overflow-x:hidden;max-width:100%;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+:root{
+  --void:#050505;
+  --ink:#0F0F0F;
+  --steel:#8C8C8C;
+  --mist:#D9D9D9;
+  --light:#FFFFFF;
+  --maxw:1320px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--void);
+  color:var(--mist);
+  font-family:'Inter',system-ui,sans-serif;
+  font-weight:300;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  max-width:100vw;
+  min-height:100svh;
+}
+::selection{background:var(--light);color:var(--void)}
+img{max-width:100%;height:auto}
+h1,.disp{font-family:'Playfair Display',serif;font-weight:500;text-transform:uppercase}
+a:focus-visible,button:focus-visible{outline:1px solid var(--light);outline-offset:3px}
+
+/* ── nav ─────────────────────────── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  background:linear-gradient(to bottom, rgba(5,5,5,.92), rgba(5,5,5,0));
+  backdrop-filter:blur(2px);
+}
+.nav-in{
+  max-width:var(--maxw);margin:0 auto;padding:22px 24px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.logo{
+  font-family:'Playfair Display',serif;font-weight:500;
+  letter-spacing:.3em;font-size:15px;color:var(--light);
+  text-decoration:none;white-space:nowrap;
+  text-transform:uppercase;
+  display:flex;align-items:center;gap:12px;
+}
+.logo-mark{height:34px;width:auto;flex-shrink:0;display:block}
+.logo small{display:block;font-family:'Inter',sans-serif;font-weight:300;font-size:8px;letter-spacing:.5em;color:var(--steel);margin-top:4px;text-transform:uppercase}
+
+/* ── экран 404 ─────────────────────────── */
+.err{
+  min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;position:relative;padding:140px 24px 80px;
+}
+.portal{
+  position:absolute;inset:0;pointer-events:none;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.portal-frame{
+  position:relative;width:min(560px,70vw);height:min(560px,70vw);
+  animation:portal-in 2s cubic-bezier(.2,.8,.2,1) both;
+}
+.portal-frame::before{
+  content:"";position:absolute;inset:0;
+  border:22px solid var(--steel);border-bottom:none;
+  opacity:.5;
+}
+.portal-frame::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 30%, rgba(255,255,255,.10), transparent 65%);
+  animation:glow-pulse 5s ease-in-out infinite;
+}
+@keyframes portal-in{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+@keyframes glow-pulse{0%,100%{opacity:.5}50%{opacity:1}}
+.err-a{
+  width:clamp(140px,20vw,240px);
+  opacity:.4;
+  user-select:none;position:relative;
+  animation:fade-in 2.4s ease both .6s;
+}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+.err-code{
+  font-size:clamp(56px,12vw,120px);
+  letter-spacing:.14em;margin-top:28px;
+  color:var(--light);position:relative;
+  animation:rise 1.4s ease both 1s;
+}
+.err h1{
+  font-size:clamp(18px,3vw,26px);
+  letter-spacing:.28em;margin-top:18px;text-indent:.28em;
+  color:var(--light);position:relative;
+  animation:rise 1.4s ease both 1.15s;
+}
+.err .sub{
+  margin-top:18px;color:var(--steel);
+  font-family:'Inter',sans-serif;font-size:13px;font-weight:300;
+  letter-spacing:.02em;max-width:44ch;position:relative;
+  animation:rise 1.4s ease both 1.3s;
+}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.err-actions{
+  margin-top:48px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center;
+  position:relative;
+  animation:rise 1.4s ease both 1.5s;
+}
+.btn{
+  display:inline-block;
+  font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--void);background:var(--light);padding:16px 32px;text-decoration:none;
+  transition:opacity .3s,box-shadow .3s;
+}
+.btn:hover{opacity:.88;box-shadow:0 0 30px rgba(255,255,255,.3)}
+.btn-ghost{
+  display:inline-block;
+  font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--light);background:transparent;border:1px solid var(--steel);padding:15px 31px;text-decoration:none;
+  transition:all .3s;
+}
+.btn-ghost:hover{border-color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.2)}
+
+footer{padding:32px 24px;text-align:center}
+footer p{
+  font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.08em;
+  color:var(--steel);
+}
+footer a{color:var(--steel);text-decoration:none;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
+footer a:hover{color:var(--light);border-color:var(--light)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="/"><img class="logo-mark" src="assets/img/logo-icon-light-sm.png" alt="Комната света">Комната<small>Света</small></a>
+  </div>
+</nav>
+
+<main class="err">
+  <div class="portal" aria-hidden="true"><div class="portal-frame"></div></div>
+  <img class="err-a" src="assets/img/logo-icon-light-hero-v2.png" alt="" aria-hidden="true">
+  <div class="err-code disp">404</div>
+  <h1>Такой страницы не существует</h1>
+  <p class="sub">Похоже, эта дверь ведёт в никуда. Возможно, страница переехала или ссылка устарела — вернитесь на главную или посмотрите афишу фестиваля.</p>
+  <div class="err-actions">
+    <a class="btn" href="/">На главную</a>
+    <a class="btn-ghost" href="bufest/">Афиша и билеты</a>
+  </div>
+</main>
+
+<footer>
+  <p>Театральная компания «Комната Света» · Санкт-Петербург · <a href="https://t.me/komnata_sveta_bot" target="_blank" rel="noopener">Написать нам</a></p>
+</footer>
+
+</body>
+</html>
