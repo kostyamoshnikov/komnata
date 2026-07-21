@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Чайка — спектакль КОМНАТА СВЕТА на БУФЕСТе</title>
-<meta name="description" content="«Чайка» — спектакль Ильи Зайцева по пьесе А.П. Чехова. БУФЕСТ 2026, 14–15 августа, площадка «Скороход». 16+">
+<title>О компании — КОМНАТА СВЕТА</title>
+<meta name="description" content="Театральная компания «Комната света» — из Петербурга. Проект ZAVIST', гастроли Мастерской Юрия Бутусова и фестиваль БуФест.">
 
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
@@ -14,13 +14,13 @@
 <meta name="theme-color" content="#050505">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Чайка — спектакль КОМНАТА СВЕТА на БУФЕСТе">
-<meta property="og:description" content="По пьесе А.П. Чехова. Режиссёр Илья Зайцев. 14–15 августа 2026, площадка «Скороход».">
+<meta property="og:title" content="О компании — КОМНАТА СВЕТА">
+<meta property="og:description" content="Театральная компания из Петербурга. Проект ZAVIST', гастроли Мастерской Юрия Бутусова и фестиваль БуФест.">
 <meta property="og:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<meta property="og:url" content="https://komnata-sveta.ru/seagull">
+<meta property="og:url" content="https://komnata-sveta.ru/about">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<link rel="canonical" href="https://komnata-sveta.ru/seagull">
+<link rel="canonical" href="https://komnata-sveta.ru/about">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,18 +77,10 @@ nav a:hover,nav a.active{color:var(--light)}
 .crumb span.sep{margin:0 8px;color:rgba(140,140,140,.5)}
 .crumb span.here{color:var(--mist)}
 
-/* ── show hero ─────────────────────────── */
+/* ── hero ─────────────────────────── */
 .show-hero{padding:48px 0 90px;border-bottom:1px solid rgba(217,217,217,.08)}
 .show-hero h1{font-size:clamp(38px,7vw,84px);letter-spacing:.04em;line-height:1.05;color:var(--light);margin:22px 0 14px}
-.show-sub{color:var(--steel);font-size:15px;letter-spacing:.06em;margin-bottom:44px;max-width:60ch}
-.meta-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:28px 40px;border-top:1px solid rgba(217,217,217,.09);padding-top:32px;margin-bottom:44px}
-.meta-row .mi .ml{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
-.meta-row .mi .mv{font-size:16px;color:var(--light)}
-.ticket-btns{display:flex;gap:16px;flex-wrap:wrap}
-.btn{display:inline-block;margin-top:10px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--void);background:var(--light);padding:16px 32px;text-decoration:none;transition:opacity .3s,box-shadow .3s}
-.btn:hover{opacity:.88;box-shadow:0 0 30px rgba(255,255,255,.3)}
-.btn-ghost{display:inline-block;margin-top:10px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--light);background:transparent;border:1px solid var(--steel);padding:15px 31px;text-decoration:none;transition:all .3s}
-.btn-ghost:hover{border-color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.2)}
+.show-sub{color:var(--steel);font-size:15px;letter-spacing:.06em;max-width:62ch}
 
 /* ── sections ─────────────────────────── */
 section{padding:90px 0;position:relative}
@@ -98,19 +90,28 @@ section{padding:90px 0;position:relative}
 .sec-head.line-on::after{transform:scaleX(1)}
 .about-text p{color:var(--steel);max-width:74ch;margin-bottom:20px;font-size:15.5px}
 .about-text p:last-child{margin-bottom:0}
+.about-text p em{color:var(--light);font-style:normal}
 
-/* ── cast / crew ─────────────────────────── */
-.cast-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:rgba(217,217,217,.06)}
-.cast-card{background:var(--ink);padding:28px 26px}
-.cast-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);margin-bottom:10px}
-.cast-name{font-size:17px;color:var(--light);line-height:1.5}
+/* ── таймлайн истории ─────────────────────────── */
+.timeline{display:flex;flex-direction:column;gap:0}
+.tl-item{display:grid;grid-template-columns:120px 1fr;gap:32px;padding:30px 0;border-top:1px solid rgba(217,217,217,.09)}
+.tl-item:last-child{border-bottom:1px solid rgba(217,217,217,.09)}
+.tl-year{font-family:'Playfair Display',serif;font-size:22px;color:var(--light);letter-spacing:.04em}
+.tl-body h3{font-size:15px;letter-spacing:.1em;color:var(--light);margin-bottom:8px;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500}
+.tl-body p{color:var(--steel);font-size:14.5px;max-width:64ch}
+.tl-body p a{white-space:nowrap}
+@media(max-width:600px){.tl-item{grid-template-columns:1fr;gap:8px}}
 
-.crew-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px 40px;margin-bottom:48px}
-.crew-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
-.crew-name{font-size:15px;color:var(--mist)}
-.crew-name small{display:block;font-size:12px;color:var(--steel);margin-top:4px}
+/* ── манифест ─────────────────────────── */
+.manifest{text-align:center}
+.manifest .big{font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,38px);line-height:1.4;max-width:20ch;margin:0 auto;color:var(--light)}
+.manifest .big em{font-style:normal;color:var(--steel)}
+.values{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 28px;margin-top:44px}
+.values span{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--steel);position:relative}
+.values span:not(:last-child)::after{content:"·";position:absolute;right:-19px;color:rgba(140,140,140,.4)}
+.signoff{margin-top:56px;font-family:'Playfair Display',serif;font-size:clamp(16px,2.4vw,20px);color:var(--mist);letter-spacing:.05em}
 
-/* ── карточки других спектаклей ─────────────────────────── */
+/* ── карточки-переходы ─────────────────────────── */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .card{background:var(--ink);padding:30px 26px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;border-right:2px solid var(--steel);border-bottom:2px solid var(--steel);transition:border-color .35s,box-shadow .35s}
 .card:hover{border-color:var(--light);box-shadow:0 0 40px -12px rgba(255,255,255,.25)}
@@ -118,6 +119,9 @@ section{padding:90px 0;position:relative}
 .card h3{font-size:17px;letter-spacing:.08em;font-weight:500;margin:14px 0 0;color:var(--light);text-transform:uppercase}
 a.card{color:inherit;text-decoration:none;display:block}
 @media(max-width:900px){.grid3{grid-template-columns:1fr}}
+
+.btn{display:inline-block;margin-top:10px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--void);background:var(--light);padding:16px 32px;text-decoration:none;transition:opacity .3s,box-shadow .3s}
+.btn:hover{opacity:.88;box-shadow:0 0 30px rgba(255,255,255,.3)}
 
 /* footer */
 footer{padding:80px 0 46px;border-top:1px solid rgba(217,217,217,.08)}
@@ -188,21 +192,15 @@ footer p{color:var(--steel);font-size:14px}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TheaterEvent",
-  "name": "Чайка",
-  "description": "По пьесе А.П. Чехова. Режиссёр Илья Зайцев.",
-  "startDate": "2026-08-14T20:00",
-  "endDate": "2026-08-15T20:00",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "Скороход",
-    "address": "Московский пр., 107, корп. 5, Санкт-Петербург"
-  },
-  "director": {"@type": "Person", "name": "Илья Зайцев"},
-  "organizer": {"@type": "Organization", "name": "КОМНАТА СВЕТА", "url": "https://komnata-sveta.ru"},
-  "isPartOf": {"@type": "Festival", "name": "БУФЕСТ 2026"}
+  "@type": "AboutPage",
+  "name": "О компании — КОМНАТА СВЕТА",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "КОМНАТА СВЕТА",
+    "url": "https://komnata-sveta.ru",
+    "description": "Театральная компания из Петербурга. Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова.",
+    "sameAs": ["https://t.me/lightroom_theatre", "https://t.me/bu_fest", "https://vk.com/lightroom_theatre"]
+  }
 }
 </script>
 </head>
@@ -212,8 +210,8 @@ footer p{color:var(--steel);font-size:14px}
   <div class="nav-in">
     <a class="logo" href="/"><img class="logo-mark" src="../assets/img/logo-icon-light-sm.png" alt="Комната света">Комната<small>Света</small></a>
     <div class="nav-links">
-      <a href="../about/">О компании</a>
-      <a href="../bufest/" class="active">БуФест</a>
+      <a href="../about/" class="active">О компании</a>
+      <a href="../bufest/">БуФест</a>
       <a href="/team">Команда</a>
       <a href="/partners">Партнёры</a>
       <a href="/collaboration">Сотрудничество</a>
@@ -226,116 +224,79 @@ footer p{color:var(--steel);font-size:14px}
 </nav>
 
 <div class="wrap crumb">
-  <a href="/">Комната Света</a><span class="sep">/</span><a href="../bufest/">БуФест</a><span class="sep">/</span><span class="here">Чайка</span>
+  <a href="/">Комната Света</a><span class="sep">/</span><span class="here">О компании</span>
 </div>
 
 <div class="wrap show-hero">
-  <p class="eyebrow reveal">БУФЕСТ 2026 · 14–15 августа</p>
-  <h1 class="reveal">Чайка</h1>
-  <p class="show-sub reveal">По одноимённой пьесе А.П. Чехова</p>
-
-  <div class="meta-row reveal">
-    <div class="mi"><div class="ml">Режиссёр</div><div class="mv"><a href="#team">Илья Зайцев</a></div></div>
-    <div class="mi"><div class="ml">Продолжительность</div><div class="mv">1 час 15 минут</div></div>
-    <div class="mi"><div class="ml">Антракт</div><div class="mv">Без антракта</div></div>
-    <div class="mi"><div class="ml">Возраст</div><div class="mv">16+</div></div>
-  </div>
-
-  <div class="ticket-btns reveal">
-    <a href="https://komnata-sveta.ru/page16" class="btn" target="_blank" rel="noopener">Билеты на 14 августа</a>
-    <a href="https://komnata-sveta.ru/page16" class="btn-ghost" target="_blank" rel="noopener">Билеты на 15 августа</a>
-  </div>
+  <p class="eyebrow reveal">О КОМПАНИИ</p>
+  <h1 class="reveal">Комната<br>Света</h1>
+  <p class="show-sub reveal">Театральная компания из Петербурга. Мы любим театр и создаём его с такими же влюблёнными людьми, как и мы.</p>
 </div>
 
 <section id="about">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>О спектакле</h2></div>
+    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>Кто мы</h2></div>
     <div class="about-text reveal">
-      <p>«Чайка» Антона Павловича Чехова — пьеса о людях театра и о цене, которую платит художник за право говорить собственным голосом.</p>
-      <p>В версии <a href="#team">Ильи Зайцева</a> известный текст резко монтируется в серию эпизодов, где персонажи — а вместе с ними и сам режиссёр — пытаются ответить себе на один и тот же вопрос: кого в себе убить — человека или поэта?</p>
-      <p>Спектакль поставлен памяти Юрия Бутусова — в рамках БуФеста, фестиваля, объединившего выпускников его мастерской.</p>
-    </div>
-  </div>
-</section>
-
-<section id="cast" style="background:var(--ink)">
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>Действующие лица и исполнители</h2></div>
-    <div class="cast-grid reveal">
-      <div class="cast-card">
-        <div class="cast-role">Аркадина</div>
-        <div class="cast-name">Мария Денисова</div>
-      </div>
-      <div class="cast-card">
-        <div class="cast-role">Треплев</div>
-        <div class="cast-name">Даниил Ядченко</div>
-      </div>
-      <div class="cast-card">
-        <div class="cast-role">Сорин</div>
-        <div class="cast-name">Семён Шестаков</div>
-      </div>
-      <div class="cast-card">
-        <div class="cast-role">Заречная</div>
-        <div class="cast-name">Евгения Леонова</div>
-      </div>
-      <div class="cast-card">
-        <div class="cast-role">Тригорин</div>
-        <div class="cast-name">Никита Ремизов</div>
-      </div>
-      <div class="cast-card">
-        <div class="cast-role">Яков</div>
-        <div class="cast-name">Фёдор Бычков</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="team">
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">03</span><h2>Постановочная группа</h2></div>
-    <div class="crew-grid reveal">
-      <div>
-        <div class="crew-role">Режиссёр</div>
-        <div class="crew-name">Илья Зайцев</div>
-      </div>
-      <div>
-        <div class="crew-role">Художник</div>
-        <div class="crew-name">Анна Бовина</div>
-      </div>
+      <p>Арт-проект «Комната света» — это пространство, где мы генерируем идеи, а самые красивые и смелые из них воплощаем в реальность.</p>
+      <p>За плечами команды — <em>гастроли выпускников Мастерской Юрия Бутусова</em> и любимый зрителями проект <a href="https://zavist-drama.ru" target="_blank" rel="noopener">ZAVIST'</a>. Впереди — большие планы и коллаборации с самыми интересными режиссёрами и художниками.</p>
     </div>
   </div>
 </section>
 
 <section style="background:var(--ink)">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">04</span><h2>Место и время</h2></div>
-    <div class="crew-grid reveal">
-      <div><div class="crew-role">Даты</div><div class="crew-name" style="font-size:18px">14 и 15 августа 2026</div></div>
-      <div><div class="crew-role">Начало</div><div class="crew-name" style="font-size:18px">20:00</div></div>
-      <div><div class="crew-role">Площадка</div><div class="crew-name">Скороход<br>Московский пр., 107, корп. 5</div></div>
+    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>Путь</h2></div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-year">2024</div>
+        <div class="tl-body">
+          <h3>ZAVIST'</h3>
+          <p>Первый проект команды, который полюбили зрители — задолго до того, как появился БуФест.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2024–25</div>
+        <div class="tl-body">
+          <h3>Гастроли Мастерской Юрия Бутусова</h3>
+          <p>«Комната света» привозит в Петербург спектакли учеников Юрия Бутусова — тепло принятые публикой в июле 2024 и 2025 года.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2026</div>
+        <div class="tl-body">
+          <h3>БуФест</h3>
+          <p>Гастроли вырастают в фестиваль памяти Юрия Бутусова — три спектакля его учеников, 10–15 августа, площадка «Скороход».</p>
+        </div>
+      </div>
     </div>
-    <div class="ticket-btns reveal">
-      <a href="https://komnata-sveta.ru/page16" class="btn" target="_blank" rel="noopener">Билеты на 14 августа</a>
-      <a href="https://komnata-sveta.ru/page16" class="btn-ghost" target="_blank" rel="noopener">Билеты на 15 августа</a>
+  </div>
+</section>
+
+<section class="manifest">
+  <div class="wrap reveal">
+    <p class="big">Мы любим театр и создаём его с <em>такими же влюблёнными людьми</em>, как и мы</p>
+    <div class="values">
+      <span>Свет</span><span>Контраст</span><span>Пространство</span><span>Тишина</span><span>Тень</span>
     </div>
+    <p class="signoff">Зажгите свет.. Раз, два, три… мы начинаем.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">05</span><h2>Ещё в программе БуФеста</h2></div>
+    <div class="sec-head reveal"><span class="eyebrow">03</span><h2>Продолжение</h2></div>
     <div class="grid3 reveal">
+      <a href="../bufest/" class="card">
+        <span class="tag">10–15 августа</span>
+        <h3>О БуФесте</h3>
+      </a>
       <a href="../viy/" class="card">
-        <span class="tag">10–11 августа</span>
+        <span class="tag">Спектакль</span>
         <h3>Вий. Домыслы</h3>
       </a>
-      <a href="../cherry/" class="card">
-        <span class="tag">12–13 августа</span>
-        <h3>Вишнёвый сад</h3>
-      </a>
-      <a href="../bufest/" class="card">
-        <span class="tag">Вся программа</span>
-        <h3>О БуФесте</h3>
+      <a href="/projects" class="card">
+        <span class="tag">Проект</span>
+        <h3>ZAVIST'</h3>
       </a>
     </div>
   </div>
