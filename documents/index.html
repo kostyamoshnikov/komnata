@@ -164,6 +164,28 @@ footer a:hover{color:var(--light)}
   .doc-item{gap:14px}
   .di-num{width:26px;font-size:17px}
 }
+@media(max-width:600px) and (min-width:431px){
+  h1{letter-spacing:.06em}
+  .wrap{padding:0 20px}
+}
+@media(max-width:430px){
+  h1{font-size:clamp(20px,8vw,30px);letter-spacing:.04em}
+  h2{font-size:clamp(15px,5vw,20px)}
+  .wrap{padding:0 16px}
+  .eyebrow{font-size:10px;letter-spacing:.26em}
+  nav .logo{font-size:12px;letter-spacing:.22em}
+  section{padding:60px 0}
+  .m-menu{padding:70px 24px 40px}
+}
+@media(max-width:375px){
+  h1{font-size:clamp(18px,9vw,26px);letter-spacing:.03em}
+  h2{font-size:clamp(14px,5.5vw,18px);letter-spacing:.18em}
+  .wrap{padding:0 14px}
+  .eyebrow{font-size:9px;letter-spacing:.22em}
+  nav .logo{font-size:11px;letter-spacing:.18em}
+  section{padding:50px 0}
+  .m-menu{padding:60px 20px 32px}
+}
 </style>
 </head>
 <body>
@@ -227,13 +249,14 @@ footer a:hover{color:var(--light)}
     <span class="di-arrow">→</span>
   </a>
 
-  <span class="doc-item di-soon">
+  <a class="doc-item" href="../bot/">
     <span class="di-num">04</span>
     <span class="di-body">
-      <span class="di-title">Правила использования бота<span class="di-tag">скоро</span></span>
-      <span class="di-desc">Условия работы с <a href="https://t.me/komnata_sveta_bot" target="_blank" rel="noopener">@komnata_sveta_bot</a> — пока страница готовится, актуальные правила уточняйте напрямую в боте.</span>
+      <span class="di-title">Правила использования бота</span>
+      <span class="di-desc">Условия работы с Telegram-ботом @komnata_sveta_bot: назначение, обрабатываемые данные, права и обязанности сторон.</span>
     </span>
-  </span>
+    <span class="di-arrow">→</span>
+  </a>
 
 <a class="back-link" href="/">← На главную</a>
 
