@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Афиша и билеты — БуФест 2026 | КОМНАТА СВЕТА</title>
-<meta name="description" content="Афиша БуФеста 2026: «Вий. Домыслы», «Вишнёвый сад», «Чайка». 10–15 августа, площадка «Скороход», Санкт-Петербург. Билеты на каждый показ.">
+<title>Сотрудничество — КОМНАТА СВЕТА</title>
+<meta name="description" content="КОМНАТА СВЕТА — организация фестивалей, гастроли, прокат спектаклей. Если у вас есть идея для совместного проекта — напишите нам.">
 
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
@@ -14,13 +14,13 @@
 <meta name="theme-color" content="#050505">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Афиша и билеты — БуФест 2026 | КОМНАТА СВЕТА">
-<meta property="og:description" content="«Вий. Домыслы», «Вишнёвый сад», «Чайка». 10–15 августа 2026, площадка «Скороход».">
+<meta property="og:title" content="Сотрудничество — КОМНАТА СВЕТА">
+<meta property="og:description" content="Организация фестивалей, гастроли, прокат спектаклей. Если у вас есть идея — напишите нам.">
 <meta property="og:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<meta property="og:url" content="https://komnata-sveta.ru/tickets">
+<meta property="og:url" content="https://komnata-sveta.ru/collaboration">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<link rel="canonical" href="https://komnata-sveta.ru/tickets">
+<link rel="canonical" href="https://komnata-sveta.ru/collaboration">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,18 +77,10 @@ nav a:hover,nav a.active{color:var(--light)}
 .crumb span.sep{margin:0 8px;color:rgba(140,140,140,.5)}
 .crumb span.here{color:var(--mist)}
 
-/* ── show hero ─────────────────────────── */
-.show-hero{padding:48px 0 90px;border-bottom:1px solid rgba(217,217,217,.08)}
-.show-hero h1{font-size:clamp(38px,7vw,84px);letter-spacing:.04em;line-height:1.05;color:var(--light);margin:22px 0 14px}
-.show-sub{color:var(--steel);font-size:15px;letter-spacing:.06em;margin-bottom:44px;max-width:60ch}
-.meta-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:28px 40px;border-top:1px solid rgba(217,217,217,.09);padding-top:32px;margin-bottom:44px}
-.meta-row .mi .ml{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
-.meta-row .mi .mv{font-size:16px;color:var(--light)}
-.ticket-btns{display:flex;gap:16px;flex-wrap:wrap}
-.btn{display:inline-block;margin-top:10px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--void);background:var(--light);padding:16px 32px;text-decoration:none;transition:opacity .3s,box-shadow .3s}
-.btn:hover{opacity:.88;box-shadow:0 0 30px rgba(255,255,255,.3)}
-.btn-ghost{display:inline-block;margin-top:10px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--light);background:transparent;border:1px solid var(--steel);padding:15px 31px;text-decoration:none;transition:all .3s}
-.btn-ghost:hover{border-color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.2)}
+/* ── page hero ─────────────────────────── */
+.page-hero{padding:48px 0 70px;border-bottom:1px solid rgba(217,217,217,.08)}
+.page-hero h1{font-size:clamp(38px,7vw,72px);letter-spacing:.04em;line-height:1.05;color:var(--light);margin:22px 0 14px}
+.page-sub{color:var(--steel);font-size:15px;letter-spacing:.06em;max-width:64ch}
 
 /* ── sections ─────────────────────────── */
 section{padding:90px 0;position:relative}
@@ -96,49 +88,22 @@ section{padding:90px 0;position:relative}
 .sec-head h2{font-size:clamp(18px,2.6vw,26px);letter-spacing:.24em;color:var(--light)}
 .sec-head::after{content:"";flex:1;height:1px;background:linear-gradient(to right, var(--steel), transparent);transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.4,0,.2,1) .2s}
 .sec-head.line-on::after{transform:scaleX(1)}
-.about-text p{color:var(--steel);max-width:74ch;margin-bottom:20px;font-size:15.5px}
-.about-text p:last-child{margin-bottom:0}
 
-/* ── афиша: расписание показов ─────────────────────────── */
-.event{
-  display:grid;grid-template-columns:150px 1fr auto;gap:28px;align-items:center;
-  padding:34px 0;border-bottom:1px solid rgba(217,217,217,.09);
-}
-.event:first-of-type{border-top:1px solid rgba(217,217,217,.09)}
-.ev-date{font-family:'Playfair Display',serif;font-weight:500;font-size:32px;color:var(--light);line-height:1.15}
-.ev-date small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.28em;color:var(--steel);text-transform:uppercase;margin-top:4px}
-.ev-info h3{font-size:17px;letter-spacing:.14em;font-weight:500;margin-bottom:6px;color:var(--light);text-transform:uppercase}
-.ev-info p{color:var(--steel);font-size:14px}
-.ev-ctas{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
-.ev-cta{
-  font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--steel);border:1px solid rgba(140,140,140,.4);
-  padding:13px 22px;text-decoration:none;white-space:nowrap;transition:all .3s;
-}
-.ev-cta:hover{border-color:var(--light);color:var(--light);text-shadow:0 0 10px rgba(255,255,255,.4)}
-.ev-cta.buy{background:var(--light);color:var(--void);border-color:var(--light)}
-.ev-cta.buy:hover{opacity:.88;color:var(--void);text-shadow:none}
-@media(max-width:760px){
-  .event{grid-template-columns:1fr;gap:16px}
-  .ev-ctas{align-items:flex-start;flex-direction:row;flex-wrap:wrap}
-}
+/* ── общий текст + теги направлений ─────────────────────────── */
+.collab-text{max-width:74ch}
+.collab-text p{color:var(--steel);font-size:16px;line-height:1.85;margin-bottom:20px}
+.collab-text p:last-child{margin-bottom:0}
+.collab-tags{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+.collab-tag{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mist);border:1px solid var(--steel);padding:14px 26px}
 
-/* ── как купить билет ─────────────────────────── */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(217,217,217,.06)}
-.step{background:var(--ink);padding:34px 30px}
-.step .num{font-family:'Playfair Display',serif;font-size:28px;color:var(--steel);margin-bottom:14px}
-.step h3{font-size:15px;letter-spacing:.1em;font-weight:500;color:var(--light);margin-bottom:10px;text-transform:uppercase}
-.step p{color:var(--steel);font-size:14px}
-@media(max-width:900px){.steps{grid-template-columns:1fr}}
-
-/* ── карточки других разделов ─────────────────────────── */
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--ink);padding:30px 26px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;border-right:2px solid var(--steel);border-bottom:2px solid var(--steel);transition:border-color .35s,box-shadow .35s}
-.card:hover{border-color:var(--light);box-shadow:0 0 40px -12px rgba(255,255,255,.25)}
-.card .tag{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--steel);font-family:'Inter',sans-serif}
-.card h3{font-size:17px;letter-spacing:.08em;font-weight:500;margin:14px 0 0;color:var(--light);text-transform:uppercase}
-a.card{color:inherit;text-decoration:none;display:block}
-@media(max-width:900px){.grid3{grid-template-columns:1fr}}
+/* ── карточка-приглашение ─────────────────────────── */
+.invite{background:var(--ink);padding:56px 50px;border-left:2px solid var(--light);display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.invite p{color:var(--mist);font-size:16px;max-width:56ch}
+.invite-links{display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--void);background:var(--light);padding:16px 32px;text-decoration:none;transition:opacity .3s,box-shadow .3s}
+.btn:hover{opacity:.88;box-shadow:0 0 30px rgba(255,255,255,.3)}
+.btn-ghost{display:inline-block;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--light);background:transparent;border:1px solid var(--steel);padding:15px 31px;text-decoration:none;transition:all .3s}
+.btn-ghost:hover{border-color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.2)}
 
 /* footer */
 footer{padding:80px 0 46px;border-top:1px solid rgba(217,217,217,.08)}
@@ -153,6 +118,7 @@ footer p{color:var(--steel);font-size:14px}
   .foot-grid>div:first-child{grid-column:1/3}
   footer h4{margin-bottom:12px}
   footer a{margin-bottom:8px;font-size:13px}
+  .invite{padding:40px 28px}
 }
 @media(max-width:420px){.foot-grid{grid-template-columns:1fr}.foot-grid>div:first-child{grid-column:1}}
 
@@ -204,42 +170,20 @@ footer p{color:var(--steel);font-size:14px}
 #back-to-top{position:fixed;bottom:28px;right:24px;width:44px;height:44px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:var(--light);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(10px);transition:all .3s;z-index:40;backdrop-filter:blur(4px)}
 #back-to-top.visible{opacity:1;transform:translateY(0)}
 #back-to-top:hover{background:rgba(255,255,255,.16)}
-@media(max-width:600px) and (min-width:431px){
-  h1{letter-spacing:.06em}
-  .wrap{padding-left:20px;padding-right:20px}
-}
-@media(max-width:430px){
-  h1{font-size:clamp(20px,8vw,30px);letter-spacing:.04em}
-  h2{font-size:clamp(15px,5vw,20px)}
-  .wrap{padding-left:16px;padding-right:16px}
-  .eyebrow{font-size:10px;letter-spacing:.26em}
-  nav .logo{font-size:12px;letter-spacing:.22em}
-  section{padding:60px 0}
-  .m-menu{padding:70px 24px 40px}
-}
-@media(max-width:375px){
-  h1{font-size:clamp(18px,9vw,26px);letter-spacing:.03em}
-  h2{font-size:clamp(14px,5.5vw,18px);letter-spacing:.18em}
-  .wrap{padding-left:14px;padding-right:14px}
-  .eyebrow{font-size:9px;letter-spacing:.22em}
-  nav .logo{font-size:11px;letter-spacing:.18em}
-  section{padding:50px 0}
-  .m-menu{padding:60px 20px 32px}
-}
-@media(max-width:430px){.ev-date{font-size:clamp(24px,7vw,34px)}}
-@media(max-width:375px){.ev-date{font-size:clamp(22px,7vw,30px)}}
 </style>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Афиша БуФеста 2026",
-  "itemListElement": [
-    {"@type":"ListItem","position":1,"url":"https://komnata-sveta.ru/viy"},
-    {"@type":"ListItem","position":2,"url":"https://komnata-sveta.ru/cherry"},
-    {"@type":"ListItem","position":3,"url":"https://komnata-sveta.ru/seagull"}
-  ]
+  "@type": "ContactPage",
+  "name": "Сотрудничество — КОМНАТА СВЕТА",
+  "url": "https://komnata-sveta.ru/collaboration",
+  "about": {
+    "@type": "Organization",
+    "name": "КОМНАТА СВЕТА",
+    "url": "https://komnata-sveta.ru",
+    "sameAs": ["https://t.me/lightroom_theatre", "https://t.me/bu_fest"]
+  }
 }
 </script>
 </head>
@@ -252,8 +196,7 @@ footer p{color:var(--steel);font-size:14px}
       <a href="../about/">О компании</a>
       <a href="../bufest/">БуФест</a>
       <a href="../team/">Команда</a>
-      <a href="../partners/">Партнёры</a>
-      <a href="../collaboration/">Сотрудничество</a>
+      <a href="../collaboration/" class="active">Сотрудничество</a>
       <a href="../contacts/">Контакты</a>
     </div>
     <button class="burger" aria-label="Меню" onclick="toggleMenu()">
@@ -263,89 +206,37 @@ footer p{color:var(--steel);font-size:14px}
 </nav>
 
 <div class="wrap crumb">
-  <a href="/">Комната Света</a><span class="sep">/</span><span class="here">Афиша и билеты</span>
+  <a href="/">Комната Света</a><span class="sep">/</span><span class="here">Сотрудничество</span>
 </div>
 
-<div class="wrap show-hero">
-  <p class="eyebrow reveal">БУФЕСТ 2026</p>
-  <h1 class="reveal">Афиша и билеты</h1>
-  <p class="show-sub reveal">Три спектакля учеников Юрия Бутусова на площадке «Скороход». Выбирайте показ и переходите за билетом.</p>
-
-  <div class="meta-row reveal">
-    <div class="mi"><div class="ml">Даты фестиваля</div><div class="mv">10–15 августа 2026</div></div>
-    <div class="mi"><div class="ml">Площадка</div><div class="mv">Скороход, СПб</div></div>
-    <div class="mi"><div class="ml">Начало показов</div><div class="mv">20:00</div></div>
-    <div class="mi"><div class="ml">Возраст</div><div class="mv">16+</div></div>
-  </div>
+<div class="wrap page-hero">
+  <p class="eyebrow reveal">Открыты к диалогу</p>
+  <h1 class="reveal">Сотрудничество</h1>
+  <p class="page-sub reveal">Организуем фестивали, ездим на гастроли, отдаём спектакли в прокат другим площадкам — если у вас есть идея, которая может из этого вырасти, напишите нам.</p>
 </div>
 
-<section id="schedule" style="padding-top:20px">
+<section>
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>Расписание показов</h2></div>
-
-    <div class="event reveal">
-      <div class="ev-date">10–11.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Вий. Домыслы»</h3>
-        <p>Режиссёр — Александр Цереня, по мотивам Н.В. Гоголя</p>
-      </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th2tT" target="_blank" rel="noopener">Билеты на 10.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th2yk" target="_blank" rel="noopener">Билеты на 11.08</a>
-        <a class="ev-cta" href="../viy/">О спектакле</a>
-      </div>
+    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>Чем мы занимаемся</h2></div>
+    <div class="collab-text reveal">
+      <p>«Комната света» выросла из гастролей и постепенно стала компанией, которая умеет собирать вокруг спектакля целое событие — от отдельного показа до фестиваля на несколько дней, как БуФест.</p>
+      <p>Мы открыты к разным форматам совместной работы: если площадке нужен готовый репертуар, фестивалю — компания, способная привезти несколько спектаклей, а команде — партнёр для гастролей, скорее всего, нам есть о чём поговорить.</p>
     </div>
-
-    <div class="event reveal">
-      <div class="ev-date">12–13.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Вишнёвый сад»</h3>
-        <p>Режиссёр — Егор Ковалёв, по пьесе А.П. Чехова</p>
-      </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th32q" target="_blank" rel="noopener">Билеты на 12.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th34o" target="_blank" rel="noopener">Билеты на 13.08</a>
-        <a class="ev-cta" href="../cherry/">О спектакле</a>
-      </div>
-    </div>
-
-    <div class="event reveal">
-      <div class="ev-date">14–15.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Чайка»</h3>
-        <p>Режиссёр — Илья Зайцев, по пьесе А.П. Чехова</p>
-      </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th36h" target="_blank" rel="noopener">Билеты на 14.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th385" target="_blank" rel="noopener">Билеты на 15.08</a>
-        <a class="ev-cta" href="../seagull/">О спектакле</a>
-      </div>
-    </div>
-
-    <div class="reveal" style="text-align:center;margin-top:48px">
-      <a class="btn-ghost" href="../bufest/">Подробнее о фестивале</a>
+    <div class="collab-tags reveal">
+      <span class="collab-tag">Организация фестивалей</span>
+      <span class="collab-tag">Гастроли</span>
+      <span class="collab-tag">Прокат спектаклей</span>
     </div>
   </div>
 </section>
 
 <section style="background:var(--ink)">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>Как купить билет</h2></div>
-    <div class="steps reveal">
-      <div class="step">
-        <div class="num">01</div>
-        <h3>Выберите показ</h3>
-        <p>Три спектакля, шесть дат — найдите нужную в расписании выше.</p>
-      </div>
-      <div class="step">
-        <div class="num">02</div>
-        <h3>Перейдите по ссылке</h3>
-        <p>Кнопка «Билеты» ведёт на страницу продажи билетов на конкретную дату.</p>
-      </div>
-      <div class="step">
-        <div class="num">03</div>
-        <h3>Остались вопросы?</h3>
-        <p>Напишите нам в <a href="https://t.me/bu_fest" target="_blank" rel="noopener">Telegram фестиваля</a> — ответим быстро.</p>
+    <div class="invite reveal">
+      <p>Расскажите о своей идее в двух словах — мы читаем всё сами и отвечаем лично, без лишних форм и анкет.</p>
+      <div class="invite-links">
+        <a class="btn" href="https://t.me/lightroom_theatre" target="_blank" rel="noopener">Написать в Telegram</a>
+        <a class="btn-ghost" href="mailto:lightroom.theatre@gmail.com">Написать на почту</a>
       </div>
     </div>
   </div>
@@ -370,7 +261,6 @@ footer p{color:var(--steel);font-size:14px}
       <div>
         <h4>Разделы</h4>
         <a href="../collaboration/">Сотрудничество</a>
-        <a href="../partners/">Партнёры</a>
         <a href="../archive/">Архив показов</a>
         <a href="../contacts/">Контакты</a>
       </div>
@@ -389,7 +279,6 @@ footer p{color:var(--steel);font-size:14px}
     <a href="../about/" onclick="toggleMenu()">О компании</a>
     <a href="../bufest/" onclick="toggleMenu()">БуФест</a>
     <a href="../team/" onclick="toggleMenu()">Команда</a>
-    <a href="../partners/" onclick="toggleMenu()">Партнёры</a>
     <a href="../collaboration/" onclick="toggleMenu()">Сотрудничество</a>
     <a href="../contacts/" onclick="toggleMenu()">Контакты</a>
   </nav>
@@ -400,7 +289,7 @@ footer p{color:var(--steel);font-size:14px}
 <div id="cookie-banner">
   <p>Мы используем cookies для аналитики и улучшения сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="../cookies/">политикой cookies</a> и <a href="../privacy/">политикой конфиденциальности</a>.</p>
   <div class="cookie-actions">
-    <button class="cookie-btn cookie-btn-more" onclick="window.location.href='/cookies'">Подробнее</button>
+    <button class="cookie-btn cookie-btn-more" onclick="window.location.href='../cookies/'">Подробнее</button>
     <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Принять</button>
   </div>
 </div>

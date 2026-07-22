@@ -433,13 +433,13 @@ nav a:hover,nav a.active{color:var(--light)}
 
 @media(max-width:600px) and (min-width:431px){
   h1{letter-spacing:.06em}
-  .wrap{padding:0 20px}
+  .wrap{padding-left:20px;padding-right:20px}
   .ev-date{font-size:clamp(26px,7vw,36px)}
 }
 @media(max-width:430px){
   h1{font-size:clamp(20px,8vw,30px);letter-spacing:.04em}
   h2{font-size:clamp(15px,5vw,20px)}
-  .wrap{padding:0 16px}
+  .wrap{padding-left:16px;padding-right:16px}
   .eyebrow{font-size:10px;letter-spacing:.26em}
   nav .logo{font-size:12px;letter-spacing:.22em}
   section{padding:60px 0}
@@ -448,7 +448,7 @@ nav a:hover,nav a.active{color:var(--light)}
 @media(max-width:375px){
   h1{font-size:clamp(18px,9vw,26px);letter-spacing:.03em}
   h2{font-size:clamp(14px,5.5vw,18px);letter-spacing:.18em}
-  .wrap{padding:0 14px}
+  .wrap{padding-left:14px;padding-right:14px}
   .eyebrow{font-size:9px;letter-spacing:.22em}
   nav .logo{font-size:11px;letter-spacing:.18em}
   section{padding:50px 0}
@@ -512,9 +512,9 @@ nav a:hover,nav a.active{color:var(--light)}
     <div class="nav-links">
       <a href="about/">О компании</a>
       <a href="bufest/">БуФест</a>
-      <a href="/team">Команда</a>
-      <a href="/partners">Партнёры</a>
-      <a href="/collaboration">Сотрудничество</a>
+      <a href="team/">Команда</a>
+      <a href="partners/">Партнёры</a>
+      <a href="collaboration/">Сотрудничество</a>
       <a href="contacts/">Контакты</a>
     </div>
     <button class="burger" aria-label="Меню" onclick="toggleMenu()">
@@ -543,11 +543,11 @@ nav a:hover,nav a.active{color:var(--light)}
         <div><span class="tag">Театр</span><h3>Кто мы</h3>
         <p>Театральная компания из Петербурга. До БуФеста — проект «ZAVIST'» и первые гастроли Мастерской Юрия Бутусова.</p></div>
       </a>
-      <a href="/team" class="card reveal">
+      <a href="team/" class="card reveal">
         <div><span class="tag">Люди</span><h3>Команда</h3>
         <p>Актёры, режиссёры и постановочная команда, которые делают спектакли «Комнаты света».</p></div>
       </a>
-      <a href="/projects" class="card reveal">
+      <a href="projects/" class="card reveal">
         <div><span class="tag">Проект</span><h3>ZAVIST'</h3>
         <p>Предыдущий проект команды, который полюбили зрители — до того, как появился БуФест.</p></div>
       </a>
@@ -624,7 +624,7 @@ nav a:hover,nav a.active{color:var(--light)}
         <span class="eyebrow">Площадкам, партнёрам, артистам</span>
         <h3 style="font-size:clamp(20px,3vw,28px)">Расскажите о своей идее</h3>
         <p>Гастроли, партнёрство, специальные показы, совместные проекты — читаем всё и отвечаем через Telegram-бота.</p>
-        <a class="btn" href="/collaboration">Написать нам</a>
+        <a class="btn" href="collaboration/">Подробнее</a>
       </div>
       <div class="flag-visual"><img src="assets/img/collab.jpg" alt="Комната света" loading="lazy" style="filter:saturate(1.1) contrast(1.05);object-position:60% 40%"><span>Сотрудничество</span></div>
     </div>
@@ -651,7 +651,7 @@ nav a:hover,nav a.active{color:var(--light)}
         <img src="assets/img/logo-icon-light-sm.png" alt="Комната света" style="height:40px;width:auto;margin-bottom:18px;opacity:.9">
         <h4>КОМНАТА СВЕТА</h4>
         <a href="https://t.me/lightroom_theatre" target="_blank" rel="noopener">Telegram компании</a>
-        <a href="/team" style="margin-top:14px">Команда</a>
+        <a href="team/" style="margin-top:14px">Команда</a>
         <a href="about/">О компании</a>
       </div>
       <div>
@@ -662,9 +662,9 @@ nav a:hover,nav a.active{color:var(--light)}
       </div>
       <div>
         <h4>Разделы</h4>
-        <a href="/collaboration">Сотрудничество</a>
-        <a href="/partners">Партнёры</a>
-        <a href="/archive">Архив показов</a>
+        <a href="collaboration/">Сотрудничество</a>
+        <a href="partners/">Партнёры</a>
+        <a href="archive/">Архив показов</a>
         <a href="contacts/">Контакты</a>
       </div>
     </div>
@@ -672,7 +672,7 @@ nav a:hover,nav a.active{color:var(--light)}
       Театральная компания «Комната Света» · Санкт-Петербург<br>
       Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова<br>
       © 2026 КОМНАТА СВЕТА<br>
-      <a href="documents/">Правовые документы</a> · <a href="/oferta">Оферта</a> · <a href="/privacy">Конфиденциальность</a> · <a href="cookies/">Cookies</a>
+      <a href="documents/">Правовые документы</a> · <a href="oferta/">Оферта</a> · <a href="privacy/">Конфиденциальность</a> · <a href="cookies/">Cookies</a>
     </div>
   </div>
 </footer>
@@ -775,9 +775,9 @@ nav a:hover,nav a.active{color:var(--light)}
   <nav class="m-menu-links">
     <a href="about/" onclick="toggleMenu()">О компании</a>
     <a href="bufest/" onclick="toggleMenu()">БуФест</a>
-    <a href="/team" onclick="toggleMenu()">Команда</a>
-    <a href="/partners" onclick="toggleMenu()">Партнёры</a>
-    <a href="/collaboration" onclick="toggleMenu()">Сотрудничество</a>
+    <a href="team/" onclick="toggleMenu()">Команда</a>
+    <a href="partners/" onclick="toggleMenu()">Партнёры</a>
+    <a href="collaboration/" onclick="toggleMenu()">Сотрудничество</a>
     <a href="contacts/" onclick="toggleMenu()">Контакты</a>
   </nav>
   <div class="m-menu-contacts">t.me/lightroom_theatre</div>
@@ -785,7 +785,7 @@ nav a:hover,nav a.active{color:var(--light)}
 </div>
 
 <div id="cookie-banner">
-  <p>Мы используем cookies для аналитики и улучшения сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="cookies/">политикой cookies</a> и <a href="/privacy">политикой конфиденциальности</a>.</p>
+  <p>Мы используем cookies для аналитики и улучшения сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="cookies/">политикой cookies</a> и <a href="privacy/">политикой конфиденциальности</a>.</p>
   <div class="cookie-actions">
     <button class="cookie-btn cookie-btn-more" onclick="window.location.href='/cookies'">Подробнее</button>
     <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Принять</button>

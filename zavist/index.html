@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Афиша и билеты — БуФест 2026 | КОМНАТА СВЕТА</title>
-<meta name="description" content="Афиша БуФеста 2026: «Вий. Домыслы», «Вишнёвый сад», «Чайка». 10–15 августа, площадка «Скороход», Санкт-Петербург. Билеты на каждый показ.">
+<title>ZAVIST' — первый спектакль команды КОМНАТА СВЕТА</title>
+<meta name="description" content="«ZAVIST'» — спектакль-расследование чувств гениев по мотивам «Моцарт и Сальери» А.С. Пушкина. Первый совместный проект команды, будущей «Комнаты света». Премьера — 6 ноября 2021, площадка «Скороход».">
 
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
@@ -14,13 +14,13 @@
 <meta name="theme-color" content="#050505">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Афиша и билеты — БуФест 2026 | КОМНАТА СВЕТА">
-<meta property="og:description" content="«Вий. Домыслы», «Вишнёвый сад», «Чайка». 10–15 августа 2026, площадка «Скороход».">
+<meta property="og:title" content="ZAVIST' — первый спектакль команды КОМНАТА СВЕТА">
+<meta property="og:description" content="Спектакль-расследование чувств гениев по мотивам «Моцарт и Сальери» А.С. Пушкина. Режиссёр София Никифорова. Премьера — 6 ноября 2021, «Скороход».">
 <meta property="og:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<meta property="og:url" content="https://komnata-sveta.ru/tickets">
+<meta property="og:url" content="https://komnata-sveta.ru/zavist">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<link rel="canonical" href="https://komnata-sveta.ru/tickets">
+<link rel="canonical" href="https://komnata-sveta.ru/zavist">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,39 +99,23 @@ section{padding:90px 0;position:relative}
 .about-text p{color:var(--steel);max-width:74ch;margin-bottom:20px;font-size:15.5px}
 .about-text p:last-child{margin-bottom:0}
 
-/* ── афиша: расписание показов ─────────────────────────── */
-.event{
-  display:grid;grid-template-columns:150px 1fr auto;gap:28px;align-items:center;
-  padding:34px 0;border-bottom:1px solid rgba(217,217,217,.09);
-}
-.event:first-of-type{border-top:1px solid rgba(217,217,217,.09)}
-.ev-date{font-family:'Playfair Display',serif;font-weight:500;font-size:32px;color:var(--light);line-height:1.15}
-.ev-date small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.28em;color:var(--steel);text-transform:uppercase;margin-top:4px}
-.ev-info h3{font-size:17px;letter-spacing:.14em;font-weight:500;margin-bottom:6px;color:var(--light);text-transform:uppercase}
-.ev-info p{color:var(--steel);font-size:14px}
-.ev-ctas{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
-.ev-cta{
-  font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--steel);border:1px solid rgba(140,140,140,.4);
-  padding:13px 22px;text-decoration:none;white-space:nowrap;transition:all .3s;
-}
-.ev-cta:hover{border-color:var(--light);color:var(--light);text-shadow:0 0 10px rgba(255,255,255,.4)}
-.ev-cta.buy{background:var(--light);color:var(--void);border-color:var(--light)}
-.ev-cta.buy:hover{opacity:.88;color:var(--void);text-shadow:none}
-@media(max-width:760px){
-  .event{grid-template-columns:1fr;gap:16px}
-  .ev-ctas{align-items:flex-start;flex-direction:row;flex-wrap:wrap}
-}
+/* ── cast / crew ─────────────────────────── */
+.cast-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:rgba(217,217,217,.06)}
+.cast-card{background:var(--ink);padding:28px 26px}
+.cast-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);margin-bottom:10px}
+.cast-name{font-size:17px;color:var(--light);line-height:1.5}
 
-/* ── как купить билет ─────────────────────────── */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(217,217,217,.06)}
-.step{background:var(--ink);padding:34px 30px}
-.step .num{font-family:'Playfair Display',serif;font-size:28px;color:var(--steel);margin-bottom:14px}
-.step h3{font-size:15px;letter-spacing:.1em;font-weight:500;color:var(--light);margin-bottom:10px;text-transform:uppercase}
-.step p{color:var(--steel);font-size:14px}
-@media(max-width:900px){.steps{grid-template-columns:1fr}}
+.crew-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px 40px;margin-bottom:48px}
+.crew-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
+.crew-name{font-size:15px;color:var(--mist)}
+.crew-name small{display:block;font-size:12px;color:var(--steel);margin-top:4px}
 
-/* ── карточки других разделов ─────────────────────────── */
+/* ── статус / архив ─────────────────────────── */
+.warning{border:1px solid rgba(217,217,217,.14);border-left:3px solid var(--light);padding:26px 30px;background:var(--ink)}
+.warning .wl{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--light);margin-bottom:12px}
+.warning p{color:var(--steel);font-size:14px;line-height:1.75}
+
+/* ── карточки других страниц ─────────────────────────── */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .card{background:var(--ink);padding:30px 26px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;border-right:2px solid var(--steel);border-bottom:2px solid var(--steel);transition:border-color .35s,box-shadow .35s}
 .card:hover{border-color:var(--light);box-shadow:0 0 40px -12px rgba(255,255,255,.25)}
@@ -226,22 +210,7 @@ footer p{color:var(--steel);font-size:14px}
   section{padding:50px 0}
   .m-menu{padding:60px 20px 32px}
 }
-@media(max-width:430px){.ev-date{font-size:clamp(24px,7vw,34px)}}
-@media(max-width:375px){.ev-date{font-size:clamp(22px,7vw,30px)}}
 </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Афиша БуФеста 2026",
-  "itemListElement": [
-    {"@type":"ListItem","position":1,"url":"https://komnata-sveta.ru/viy"},
-    {"@type":"ListItem","position":2,"url":"https://komnata-sveta.ru/cherry"},
-    {"@type":"ListItem","position":3,"url":"https://komnata-sveta.ru/seagull"}
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -263,90 +232,97 @@ footer p{color:var(--steel);font-size:14px}
 </nav>
 
 <div class="wrap crumb">
-  <a href="/">Комната Света</a><span class="sep">/</span><span class="here">Афиша и билеты</span>
+  <a href="/">Комната Света</a><span class="sep">/</span><a href="../projects/">Проекты</a><span class="sep">/</span><span class="here">ZAVIST'</span>
 </div>
 
 <div class="wrap show-hero">
-  <p class="eyebrow reveal">БУФЕСТ 2026</p>
-  <h1 class="reveal">Афиша и билеты</h1>
-  <p class="show-sub reveal">Три спектакля учеников Юрия Бутусова на площадке «Скороход». Выбирайте показ и переходите за билетом.</p>
+  <p class="eyebrow reveal">Первый проект команды · 2021</p>
+  <h1 class="reveal">ZAVIST'</h1>
+  <p class="show-sub reveal">Спектакль-расследование чувств гениев по мотивам маленькой трагедии А.С. Пушкина «Моцарт и Сальери»</p>
 
   <div class="meta-row reveal">
-    <div class="mi"><div class="ml">Даты фестиваля</div><div class="mv">10–15 августа 2026</div></div>
-    <div class="mi"><div class="ml">Площадка</div><div class="mv">Скороход, СПб</div></div>
-    <div class="mi"><div class="ml">Начало показов</div><div class="mv">20:00</div></div>
-    <div class="mi"><div class="ml">Возраст</div><div class="mv">16+</div></div>
+    <div class="mi"><div class="ml">Режиссёр</div><div class="mv"><a href="#team">София Никифорова</a></div></div>
+    <div class="mi"><div class="ml">Премьера</div><div class="mv">6 ноября 2021</div></div>
+    <div class="mi"><div class="ml">Площадка</div><div class="mv">Скороход</div></div>
+  </div>
+
+  <div class="ticket-btns reveal">
+    <a href="https://youtu.be/ZY_PtTvgVEQ" class="btn-ghost" target="_blank" rel="noopener">Смотреть тизер</a>
   </div>
 </div>
 
-<section id="schedule" style="padding-top:20px">
+<section id="about">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>Расписание показов</h2></div>
+    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>О спектакле</h2></div>
+    <div class="about-text reveal">
+      <p>Имя Антонио Сальери в России прочно связано со смертью Моцарта — и почти никогда с его собственной музыкой. «ZAVIST'» пробует посмотреть на пушкинский сюжет без готового приговора: команда спектакля не ставит целью оправдать или обвинить, а рассматривает историю зависти гения к гению с разных сторон.</p>
+      <p>Замысел родился из работы <a href="#team">Софии Никифоровой</a> с актёром Александром Казанцевым — тот предложил разобрать монолог Сальери, и короткая пушкинская трагедия стала материалом для режиссёрского дебюта Никифоровой. Пушкинский текст в спектакле звучит дословно, но дополнен текстами Ницше и письмами Моцарта.</p>
+      <p>«ZAVIST'» вышел в 2021 году, задолго до БуФеста — это первая совместная работа команды, которая позже соберётся вокруг «Комнаты света».</p>
+    </div>
+  </div>
+</section>
 
-    <div class="event reveal">
-      <div class="ev-date">10–11.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Вий. Домыслы»</h3>
-        <p>Режиссёр — Александр Цереня, по мотивам Н.В. Гоголя</p>
+<section id="cast" style="background:var(--ink)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>В ролях</h2></div>
+    <div class="cast-grid reveal">
+      <div class="cast-card">
+        <div class="cast-role">Сальери</div>
+        <div class="cast-name">Александр Казанцев</div>
       </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th2tT" target="_blank" rel="noopener">Билеты на 10.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th2yk" target="_blank" rel="noopener">Билеты на 11.08</a>
-        <a class="ev-cta" href="../viy/">О спектакле</a>
+      <div class="cast-card">
+        <div class="cast-role">Актриса</div>
+        <div class="cast-name">Маргарита Таничева</div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-role">Актриса, саунд-дизайн</div>
+        <div class="cast-name">Ксения Шамарина</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">03</span><h2>Постановочная группа</h2></div>
+    <div class="crew-grid reveal">
+      <div>
+        <div class="crew-role">Режиссёр</div>
+        <div class="crew-name">София Никифорова<small>режиссёрский дебют</small></div>
+      </div>
+      <div>
+        <div class="crew-role">Художник-постановщик, видео</div>
+        <div class="crew-name">Полина Хамраева</div>
+      </div>
+      <div>
+        <div class="crew-role">Продюсер</div>
+        <div class="crew-name">Светлана Кряжева</div>
       </div>
     </div>
 
-    <div class="event reveal">
-      <div class="ev-date">12–13.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Вишнёвый сад»</h3>
-        <p>Режиссёр — Егор Ковалёв, по пьесе А.П. Чехова</p>
-      </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th32q" target="_blank" rel="noopener">Билеты на 12.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th34o" target="_blank" rel="noopener">Билеты на 13.08</a>
-        <a class="ev-cta" href="../cherry/">О спектакле</a>
-      </div>
-    </div>
-
-    <div class="event reveal">
-      <div class="ev-date">14–15.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Чайка»</h3>
-        <p>Режиссёр — Илья Зайцев, по пьесе А.П. Чехова</p>
-      </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th36h" target="_blank" rel="noopener">Билеты на 14.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th385" target="_blank" rel="noopener">Билеты на 15.08</a>
-        <a class="ev-cta" href="../seagull/">О спектакле</a>
-      </div>
-    </div>
-
-    <div class="reveal" style="text-align:center;margin-top:48px">
-      <a class="btn-ghost" href="../bufest/">Подробнее о фестивале</a>
+    <div class="warning reveal">
+      <div class="wl">Статус спектакля</div>
+      <p>«ZAVIST'» был показан в 2021 году на площадке «Скороход» и сегодня не входит в текущую афишу — сайт спектакля zavist-drama.ru больше не поддерживается. Посмотреть тизер можно на <a href="https://youtu.be/ZY_PtTvgVEQ" target="_blank" rel="noopener">YouTube</a>.</p>
     </div>
   </div>
 </section>
 
 <section style="background:var(--ink)">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>Как купить билет</h2></div>
-    <div class="steps reveal">
-      <div class="step">
-        <div class="num">01</div>
-        <h3>Выберите показ</h3>
-        <p>Три спектакля, шесть дат — найдите нужную в расписании выше.</p>
-      </div>
-      <div class="step">
-        <div class="num">02</div>
-        <h3>Перейдите по ссылке</h3>
-        <p>Кнопка «Билеты» ведёт на страницу продажи билетов на конкретную дату.</p>
-      </div>
-      <div class="step">
-        <div class="num">03</div>
-        <h3>Остались вопросы?</h3>
-        <p>Напишите нам в <a href="https://t.me/bu_fest" target="_blank" rel="noopener">Telegram фестиваля</a> — ответим быстро.</p>
-      </div>
+    <div class="sec-head reveal"><span class="eyebrow">04</span><h2>Ещё на сайте</h2></div>
+    <div class="grid3 reveal">
+      <a href="../projects/" class="card">
+        <span class="tag">Проекты</span>
+        <h3>ZAVIST' и гастроли Мастерской</h3>
+      </a>
+      <a href="../about/" class="card">
+        <span class="tag">О компании</span>
+        <h3>Кто мы</h3>
+      </a>
+      <a href="../bufest/" class="card">
+        <span class="tag">Сейчас</span>
+        <h3>О БуФесте</h3>
+      </a>
     </div>
   </div>
 </section>

@@ -202,12 +202,12 @@ footer p{color:var(--steel);font-size:14px}
 #back-to-top:hover{background:rgba(255,255,255,.16)}
 @media(max-width:600px) and (min-width:431px){
   h1{letter-spacing:.06em}
-  .wrap{padding:0 20px}
+  .wrap{padding-left:20px;padding-right:20px}
 }
 @media(max-width:430px){
   h1{font-size:clamp(20px,8vw,30px);letter-spacing:.04em}
   h2{font-size:clamp(15px,5vw,20px)}
-  .wrap{padding:0 16px}
+  .wrap{padding-left:16px;padding-right:16px}
   .eyebrow{font-size:10px;letter-spacing:.26em}
   nav .logo{font-size:12px;letter-spacing:.22em}
   section{padding:60px 0}
@@ -216,7 +216,7 @@ footer p{color:var(--steel);font-size:14px}
 @media(max-width:375px){
   h1{font-size:clamp(18px,9vw,26px);letter-spacing:.03em}
   h2{font-size:clamp(14px,5.5vw,18px);letter-spacing:.18em}
-  .wrap{padding:0 14px}
+  .wrap{padding-left:14px;padding-right:14px}
   .eyebrow{font-size:9px;letter-spacing:.22em}
   nav .logo{font-size:11px;letter-spacing:.18em}
   section{padding:50px 0}
@@ -247,9 +247,9 @@ footer p{color:var(--steel);font-size:14px}
     <div class="nav-links">
       <a href="../about/">О компании</a>
       <a href="../bufest/" class="active">БуФест</a>
-      <a href="/team">Команда</a>
-      <a href="/partners">Партнёры</a>
-      <a href="/collaboration">Сотрудничество</a>
+      <a href="../team/">Команда</a>
+      <a href="../partners/">Партнёры</a>
+      <a href="../collaboration/">Сотрудничество</a>
       <a href="../contacts/">Контакты</a>
     </div>
     <button class="burger" aria-label="Меню" onclick="toggleMenu()">
@@ -363,7 +363,7 @@ footer p{color:var(--steel);font-size:14px}
         <img src="../assets/img/logo-icon-light-sm.png" alt="Комната света" style="height:40px;width:auto;margin-bottom:18px;opacity:.9">
         <h4>КОМНАТА СВЕТА</h4>
         <a href="https://t.me/lightroom_theatre" target="_blank" rel="noopener">Telegram компании</a>
-        <a href="/team" style="margin-top:14px">Команда</a>
+        <a href="../team/" style="margin-top:14px">Команда</a>
         <a href="../about/">О компании</a>
       </div>
       <div>
@@ -374,9 +374,9 @@ footer p{color:var(--steel);font-size:14px}
       </div>
       <div>
         <h4>Разделы</h4>
-        <a href="/collaboration">Сотрудничество</a>
-        <a href="/partners">Партнёры</a>
-        <a href="/archive">Архив показов</a>
+        <a href="../collaboration/">Сотрудничество</a>
+        <a href="../partners/">Партнёры</a>
+        <a href="../archive/">Архив показов</a>
         <a href="../contacts/">Контакты</a>
       </div>
     </div>
@@ -384,7 +384,7 @@ footer p{color:var(--steel);font-size:14px}
       Театральная компания «Комната Света» · Санкт-Петербург<br>
       Организатор БУФЕСТа — фестиваля памяти Юрия Бутусова<br>
       © 2026 КОМНАТА СВЕТА<br>
-      <a href="../documents/">Правовые документы</a> · <a href="/oferta">Оферта</a> · <a href="/privacy">Конфиденциальность</a> · <a href="../cookies/">Cookies</a>
+      <a href="../documents/">Правовые документы</a> · <a href="../oferta/">Оферта</a> · <a href="../privacy/">Конфиденциальность</a> · <a href="../cookies/">Cookies</a>
     </div>
   </div>
 </footer>
@@ -393,9 +393,9 @@ footer p{color:var(--steel);font-size:14px}
   <nav class="m-menu-links">
     <a href="../about/" onclick="toggleMenu()">О компании</a>
     <a href="../bufest/" onclick="toggleMenu()">БуФест</a>
-    <a href="/team" onclick="toggleMenu()">Команда</a>
-    <a href="/partners" onclick="toggleMenu()">Партнёры</a>
-    <a href="/collaboration" onclick="toggleMenu()">Сотрудничество</a>
+    <a href="../team/" onclick="toggleMenu()">Команда</a>
+    <a href="../partners/" onclick="toggleMenu()">Партнёры</a>
+    <a href="../collaboration/" onclick="toggleMenu()">Сотрудничество</a>
     <a href="../contacts/" onclick="toggleMenu()">Контакты</a>
   </nav>
   <div class="m-menu-contacts">t.me/lightroom_theatre</div>
@@ -403,7 +403,7 @@ footer p{color:var(--steel);font-size:14px}
 </div>
 
 <div id="cookie-banner">
-  <p>Мы используем cookies для аналитики и улучшения сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="../cookies/">политикой cookies</a> и <a href="/privacy">политикой конфиденциальности</a>.</p>
+  <p>Мы используем cookies для аналитики и улучшения сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="../cookies/">политикой cookies</a> и <a href="../privacy/">политикой конфиденциальности</a>.</p>
   <div class="cookie-actions">
     <button class="cookie-btn cookie-btn-more" onclick="window.location.href='/cookies'">Подробнее</button>
     <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Принять</button>

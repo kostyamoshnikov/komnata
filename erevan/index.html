@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Афиша и билеты — БуФест 2026 | КОМНАТА СВЕТА</title>
-<meta name="description" content="Афиша БуФеста 2026: «Вий. Домыслы», «Вишнёвый сад», «Чайка». 10–15 августа, площадка «Скороход», Санкт-Петербург. Билеты на каждый показ.">
+<title>«Чайка» в Ереване — восстановленный спектакль Юрия Бутусова | КОМНАТА СВЕТА</title>
+<meta name="description" content="14–15 ноября 2025 года в Ереване впервые показали восстановленную «Чайку» Юрия Бутусова — премьеру «Сатирикона» 2011 года. «Комната света» помогала зрителям из России, которые прилетели специально на этот показ.">
 
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
@@ -13,14 +13,14 @@
 <link rel="icon" href="../favicon.ico">
 <meta name="theme-color" content="#050505">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Афиша и билеты — БуФест 2026 | КОМНАТА СВЕТА">
-<meta property="og:description" content="«Вий. Домыслы», «Вишнёвый сад», «Чайка». 10–15 августа 2026, площадка «Скороход».">
+<meta property="og:type" content="article">
+<meta property="og:title" content="«Чайка» в Ереване — восстановленный спектакль Юрия Бутусова">
+<meta property="og:description" content="14–15 ноября 2025: первый показ восстановленной «Чайки» после ухода режиссёра. Ереван, фестиваль «Shakespeare & Co».">
 <meta property="og:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<meta property="og:url" content="https://komnata-sveta.ru/tickets">
+<meta property="og:url" content="https://komnata-sveta.ru/erevan">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://komnata-sveta.ru/assets/img/logo-full-original-og.png">
-<link rel="canonical" href="https://komnata-sveta.ru/tickets">
+<link rel="canonical" href="https://komnata-sveta.ru/erevan">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,11 +80,10 @@ nav a:hover,nav a.active{color:var(--light)}
 /* ── show hero ─────────────────────────── */
 .show-hero{padding:48px 0 90px;border-bottom:1px solid rgba(217,217,217,.08)}
 .show-hero h1{font-size:clamp(38px,7vw,84px);letter-spacing:.04em;line-height:1.05;color:var(--light);margin:22px 0 14px}
-.show-sub{color:var(--steel);font-size:15px;letter-spacing:.06em;margin-bottom:44px;max-width:60ch}
-.meta-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:28px 40px;border-top:1px solid rgba(217,217,217,.09);padding-top:32px;margin-bottom:44px}
+.show-sub{color:var(--steel);font-size:15px;letter-spacing:.06em;margin-bottom:44px;max-width:66ch}
+.meta-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:28px 40px;border-top:1px solid rgba(217,217,217,.09);padding-top:32px}
 .meta-row .mi .ml{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
 .meta-row .mi .mv{font-size:16px;color:var(--light)}
-.ticket-btns{display:flex;gap:16px;flex-wrap:wrap}
 .btn{display:inline-block;margin-top:10px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--void);background:var(--light);padding:16px 32px;text-decoration:none;transition:opacity .3s,box-shadow .3s}
 .btn:hover{opacity:.88;box-shadow:0 0 30px rgba(255,255,255,.3)}
 .btn-ghost{display:inline-block;margin-top:10px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--light);background:transparent;border:1px solid var(--steel);padding:15px 31px;text-decoration:none;transition:all .3s}
@@ -98,40 +97,25 @@ section{padding:90px 0;position:relative}
 .sec-head.line-on::after{transform:scaleX(1)}
 .about-text p{color:var(--steel);max-width:74ch;margin-bottom:20px;font-size:15.5px}
 .about-text p:last-child{margin-bottom:0}
+.about-text p em{color:var(--light);font-style:normal}
 
-/* ── афиша: расписание показов ─────────────────────────── */
-.event{
-  display:grid;grid-template-columns:150px 1fr auto;gap:28px;align-items:center;
-  padding:34px 0;border-bottom:1px solid rgba(217,217,217,.09);
-}
-.event:first-of-type{border-top:1px solid rgba(217,217,217,.09)}
-.ev-date{font-family:'Playfair Display',serif;font-weight:500;font-size:32px;color:var(--light);line-height:1.15}
-.ev-date small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.28em;color:var(--steel);text-transform:uppercase;margin-top:4px}
-.ev-info h3{font-size:17px;letter-spacing:.14em;font-weight:500;margin-bottom:6px;color:var(--light);text-transform:uppercase}
-.ev-info p{color:var(--steel);font-size:14px}
-.ev-ctas{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
-.ev-cta{
-  font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--steel);border:1px solid rgba(140,140,140,.4);
-  padding:13px 22px;text-decoration:none;white-space:nowrap;transition:all .3s;
-}
-.ev-cta:hover{border-color:var(--light);color:var(--light);text-shadow:0 0 10px rgba(255,255,255,.4)}
-.ev-cta.buy{background:var(--light);color:var(--void);border-color:var(--light)}
-.ev-cta.buy:hover{opacity:.88;color:var(--void);text-shadow:none}
-@media(max-width:760px){
-  .event{grid-template-columns:1fr;gap:16px}
-  .ev-ctas{align-items:flex-start;flex-direction:row;flex-wrap:wrap}
-}
+/* ── cast / crew ─────────────────────────── */
+.cast-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:rgba(217,217,217,.06);margin-bottom:8px}
+.cast-card{background:var(--ink);padding:28px 26px}
+.cast-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);margin-bottom:10px}
+.cast-name{font-size:17px;color:var(--light);line-height:1.5}
 
-/* ── как купить билет ─────────────────────────── */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(217,217,217,.06)}
-.step{background:var(--ink);padding:34px 30px}
-.step .num{font-family:'Playfair Display',serif;font-size:28px;color:var(--steel);margin-bottom:14px}
-.step h3{font-size:15px;letter-spacing:.1em;font-weight:500;color:var(--light);margin-bottom:10px;text-transform:uppercase}
-.step p{color:var(--steel);font-size:14px}
-@media(max-width:900px){.steps{grid-template-columns:1fr}}
+.crew-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px 40px;margin-bottom:8px}
+.crew-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
+.crew-name{font-size:15px;color:var(--mist)}
+.crew-name small{display:block;font-size:12px;color:var(--steel);margin-top:4px}
 
-/* ── карточки других разделов ─────────────────────────── */
+/* ── warning / note box ─────────────────────────── */
+.warning{border:1px solid rgba(217,217,217,.14);border-left:3px solid var(--light);padding:26px 30px;background:var(--ink)}
+.warning .wl{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--light);margin-bottom:12px}
+.warning p{color:var(--steel);font-size:14px;line-height:1.75}
+
+/* ── карточки ─────────────────────────── */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .card{background:var(--ink);padding:30px 26px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;border-right:2px solid var(--steel);border-bottom:2px solid var(--steel);transition:border-color .35s,box-shadow .35s}
 .card:hover{border-color:var(--light);box-shadow:0 0 40px -12px rgba(255,255,255,.25)}
@@ -204,44 +188,7 @@ footer p{color:var(--steel);font-size:14px}
 #back-to-top{position:fixed;bottom:28px;right:24px;width:44px;height:44px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:var(--light);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(10px);transition:all .3s;z-index:40;backdrop-filter:blur(4px)}
 #back-to-top.visible{opacity:1;transform:translateY(0)}
 #back-to-top:hover{background:rgba(255,255,255,.16)}
-@media(max-width:600px) and (min-width:431px){
-  h1{letter-spacing:.06em}
-  .wrap{padding-left:20px;padding-right:20px}
-}
-@media(max-width:430px){
-  h1{font-size:clamp(20px,8vw,30px);letter-spacing:.04em}
-  h2{font-size:clamp(15px,5vw,20px)}
-  .wrap{padding-left:16px;padding-right:16px}
-  .eyebrow{font-size:10px;letter-spacing:.26em}
-  nav .logo{font-size:12px;letter-spacing:.22em}
-  section{padding:60px 0}
-  .m-menu{padding:70px 24px 40px}
-}
-@media(max-width:375px){
-  h1{font-size:clamp(18px,9vw,26px);letter-spacing:.03em}
-  h2{font-size:clamp(14px,5.5vw,18px);letter-spacing:.18em}
-  .wrap{padding-left:14px;padding-right:14px}
-  .eyebrow{font-size:9px;letter-spacing:.22em}
-  nav .logo{font-size:11px;letter-spacing:.18em}
-  section{padding:50px 0}
-  .m-menu{padding:60px 20px 32px}
-}
-@media(max-width:430px){.ev-date{font-size:clamp(24px,7vw,34px)}}
-@media(max-width:375px){.ev-date{font-size:clamp(22px,7vw,30px)}}
 </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Афиша БуФеста 2026",
-  "itemListElement": [
-    {"@type":"ListItem","position":1,"url":"https://komnata-sveta.ru/viy"},
-    {"@type":"ListItem","position":2,"url":"https://komnata-sveta.ru/cherry"},
-    {"@type":"ListItem","position":3,"url":"https://komnata-sveta.ru/seagull"}
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -263,90 +210,139 @@ footer p{color:var(--steel);font-size:14px}
 </nav>
 
 <div class="wrap crumb">
-  <a href="/">Комната Света</a><span class="sep">/</span><span class="here">Афиша и билеты</span>
+  <a href="/">Комната Света</a><span class="sep">/</span><a href="../butusov/">Юрий Бутусов</a><span class="sep">/</span><span class="here">Ереван</span>
 </div>
 
 <div class="wrap show-hero">
-  <p class="eyebrow reveal">БУФЕСТ 2026</p>
-  <h1 class="reveal">Афиша и билеты</h1>
-  <p class="show-sub reveal">Три спектакля учеников Юрия Бутусова на площадке «Скороход». Выбирайте показ и переходите за билетом.</p>
+  <p class="eyebrow reveal">14–15 НОЯБРЯ 2025 · ЕРЕВАН</p>
+  <h1 class="reveal">«Чайка» вернулась</h1>
+  <p class="show-sub reveal">Спектакль Юрия Бутусова в «Сатириконе», не игравшийся в России с лета 2022 года, впервые восстановили и показали за рубежом — в Ереване, на Международном фестивале «Shakespeare&nbsp;&amp;&nbsp;Co». Гастроли «Сатирикона» представил фестиваль совместно с театральной компанией «Комната света» — в память о режиссёре, трагически погибшем в августе 2025-го. Часть зала в те два вечера — зрители, специально прилетевшие из России ради этого одного спектакля.</p>
 
   <div class="meta-row reveal">
-    <div class="mi"><div class="ml">Даты фестиваля</div><div class="mv">10–15 августа 2026</div></div>
-    <div class="mi"><div class="ml">Площадка</div><div class="mv">Скороход, СПб</div></div>
-    <div class="mi"><div class="ml">Начало показов</div><div class="mv">20:00</div></div>
-    <div class="mi"><div class="ml">Возраст</div><div class="mv">16+</div></div>
+    <div class="mi"><div class="ml">Даты показов</div><div class="mv">14–15 ноября 2025, 19:00</div></div>
+    <div class="mi"><div class="ml">Площадка</div><div class="mv">Театр музыкальной комедии им. Акопа Пароняна, Ереван</div></div>
+    <div class="mi"><div class="ml">Фестиваль</div><div class="mv">Shakespeare &amp; Co</div></div>
+    <div class="mi"><div class="ml">Спектакль</div><div class="mv">«Чайка», театр «Сатирикон», премьера — 2011</div></div>
+    <div class="mi"><div class="ml">Продолжительность</div><div class="mv">4 ч 40 мин, 3 антракта</div></div>
+    <div class="mi"><div class="ml">Возраст</div><div class="mv">12+</div></div>
   </div>
 </div>
 
-<section id="schedule" style="padding-top:20px">
+<section id="about">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>Расписание показов</h2></div>
-
-    <div class="event reveal">
-      <div class="ev-date">10–11.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Вий. Домыслы»</h3>
-        <p>Режиссёр — Александр Цереня, по мотивам Н.В. Гоголя</p>
-      </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th2tT" target="_blank" rel="noopener">Билеты на 10.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th2yk" target="_blank" rel="noopener">Билеты на 11.08</a>
-        <a class="ev-cta" href="../viy/">О спектакле</a>
-      </div>
-    </div>
-
-    <div class="event reveal">
-      <div class="ev-date">12–13.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Вишнёвый сад»</h3>
-        <p>Режиссёр — Егор Ковалёв, по пьесе А.П. Чехова</p>
-      </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th32q" target="_blank" rel="noopener">Билеты на 12.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th34o" target="_blank" rel="noopener">Билеты на 13.08</a>
-        <a class="ev-cta" href="../cherry/">О спектакле</a>
-      </div>
-    </div>
-
-    <div class="event reveal">
-      <div class="ev-date">14–15.08<small>Скороход</small></div>
-      <div class="ev-info">
-        <h3>«Чайка»</h3>
-        <p>Режиссёр — Илья Зайцев, по пьесе А.П. Чехова</p>
-      </div>
-      <div class="ev-ctas">
-        <a class="ev-cta buy" href="https://clck.ru/3Th36h" target="_blank" rel="noopener">Билеты на 14.08</a>
-        <a class="ev-cta buy" href="https://clck.ru/3Th385" target="_blank" rel="noopener">Билеты на 15.08</a>
-        <a class="ev-cta" href="../seagull/">О спектакле</a>
-      </div>
-    </div>
-
-    <div class="reveal" style="text-align:center;margin-top:48px">
-      <a class="btn-ghost" href="../bufest/">Подробнее о фестивале</a>
+    <div class="sec-head reveal"><span class="eyebrow">01</span><h2>О спектакле</h2></div>
+    <div class="about-text reveal">
+      <p>«Чайку» Юрий Бутусов поставил в «Сатириконе» в 2011 году — спектакль, посвящённый актрисе Валентине Караваевой, чья судьба сложилась трагически после автомобильной аварии, но которая до конца жизни продолжала играть чеховскую Нину Заречную перед включённой камерой, в одиночестве своей квартиры.</p>
+      <p>Постановку в сезоне 2010/2011 наградили премией «Золотая маска» за режиссуру и выдвигали ещё в четырёх номинациях. Сам Бутусов много лет выходил на сцену в собственном спектакле — танцевал и читал монолог Треплева в моменты, ставшие для постоянных зрителей одним из узнаваемых образов «Чайки».</p>
     </div>
   </div>
 </section>
 
-<section style="background:var(--ink)">
+<section id="crew" style="background:var(--ink)">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>Как купить билет</h2></div>
-    <div class="steps reveal">
-      <div class="step">
-        <div class="num">01</div>
-        <h3>Выберите показ</h3>
-        <p>Три спектакля, шесть дат — найдите нужную в расписании выше.</p>
+    <div class="sec-head reveal"><span class="eyebrow">02</span><h2>Создатели спектакля</h2></div>
+    <div class="crew-grid reveal">
+      <div>
+        <div class="crew-role">Автор пьесы</div>
+        <div class="crew-name">Антон Чехов</div>
       </div>
-      <div class="step">
-        <div class="num">02</div>
-        <h3>Перейдите по ссылке</h3>
-        <p>Кнопка «Билеты» ведёт на страницу продажи билетов на конкретную дату.</p>
+      <div>
+        <div class="crew-role">Режиссёр</div>
+        <div class="crew-name">Юрий Бутусов</div>
       </div>
-      <div class="step">
-        <div class="num">03</div>
-        <h3>Остались вопросы?</h3>
-        <p>Напишите нам в <a href="https://t.me/bu_fest" target="_blank" rel="noopener">Telegram фестиваля</a> — ответим быстро.</p>
+      <div>
+        <div class="crew-role">Художник</div>
+        <div class="crew-name">Александр Шишкин</div>
       </div>
+      <div>
+        <div class="crew-role">Композитор</div>
+        <div class="crew-name">Фаустас Латенас</div>
+      </div>
+      <div>
+        <div class="crew-role">Свет</div>
+        <div class="crew-name">Анатолий Кузнецов</div>
+      </div>
+      <div>
+        <div class="crew-role">Звук</div>
+        <div class="crew-name">Екатерина Седых</div>
+      </div>
+      <div>
+        <div class="crew-role">Помощник режиссёра</div>
+        <div class="crew-name">Эльвира Кекеева</div>
+      </div>
+    </div>
+    <div class="cast-grid reveal">
+      <div class="cast-card">
+        <div class="cast-role">Аркадина</div>
+        <div class="cast-name">Полина Райкина, Лика Нифонтова</div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-role">Треплев</div>
+        <div class="cast-name">Тимофей Трибунцев, Антон Кузнецов, Денис Суханов, Артём Осипов</div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-role">Нина Заречная</div>
+        <div class="cast-name">Агриппина Стеклова, Марьяна Спивак, Лика Нифонтова</div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-role">Тригорин</div>
+        <div class="cast-name">Денис Суханов</div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-role">Сорин</div>
+        <div class="cast-name">Владимир Большов</div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-role">Дорн</div>
+        <div class="cast-name">Артём Осипов</div>
+      </div>
+    </div>
+    <div class="about-text reveal" style="margin-top:8px">
+      <p>Одна из фирменных черт бутусовской «Чайки» — одни и те же роли и мизансцены в разных актах играют разные артисты: приём, который не утомляет зрителя, а раскрывает текст новыми гранями. Монолог Треплева из четвёртого акта в архивной программке спектакля значится за двумя исполнителями — Тимофеем Трибунцевым и самим Юрием Бутусовым.</p>
+    </div>
+  </div>
+</section>
+
+<section id="return">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">03</span><h2>Возвращение</h2></div>
+    <div class="about-text reveal" style="margin-bottom:40px">
+      <p>После отъезда Юрия Бутусова из России спектакль официально оставался в репертуаре «Сатирикона», но не игрался — в последний раз его показывали 1 июля 2022 года. Гибель режиссёра в августе 2025-го в Болгарии сделала вопрос о судьбе «Чайки» особенно острым.</p>
+      <p>Ереванские показы стали первым возвращением спектакля — почти заново пришлось собирать декорации и костюмы, а репетиции сложной постановки искали место в Москве и в итоге нашли его на «Мосфильме». Состав артистов остался прежним: в моменты, где раньше на сцену выходил сам режиссёр, актёры теперь проецируют кадры видеозаписей с ним — так эффект его присутствия в спектакле сохранился.</p>
+    </div>
+    <div class="warning reveal">
+      <div class="wl">Из анонса показов</div>
+      <p>Организаторы фестиваля описывали ереванский показ как продолжение спектакля после вынужденного трёхлетнего антракта — с надеждой, что Юрий Николаевич, узнавший о готовящихся гастролях незадолго до гибели, поддержит постановку «свыше».</p>
+    </div>
+  </div>
+</section>
+
+<section id="russian-audience" style="background:var(--ink)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">04</span><h2>Зрители из России</h2></div>
+    <div class="about-text reveal">
+      <p>Для многих поклонников Юрия Бутусова в России эти два вечера в Ереване были единственным шансом увидеть восстановленную «Чайку» — спектакль, который годами не показывали на родине. Часть билетов раскупили именно зрители, специально прилетевшие из России ради этого показа.</p>
+      <p>«Комната света» выступила со-организатором ереванских гастролей «Сатирикона» вместе с фестивалем «Shakespeare &amp; Co» и занималась билетами для российской аудитории — тех, кто, узнав о ереванских датах, решил не откладывать и лично проститься со спектаклем, ставшим частью театральной биографии Бутусова.</p>
+    </div>
+  </div>
+</section>
+
+<section id="more">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">05</span><h2>Ещё по теме</h2></div>
+    <div class="grid3 reveal">
+      <a href="../butusov/" class="card">
+        <span class="tag">Памяти режиссёра</span>
+        <h3>Юрий Бутусов</h3>
+      </a>
+      <a href="../bufest/" class="card">
+        <span class="tag">10–15 августа 2026</span>
+        <h3>О БуФесте</h3>
+      </a>
+      <a href="../seagull/" class="card">
+        <span class="tag">Другой спектакль · 14–15 августа</span>
+        <h3>«Чайка» на БуФесте</h3>
+      </a>
     </div>
   </div>
 </section>
@@ -400,7 +396,7 @@ footer p{color:var(--steel);font-size:14px}
 <div id="cookie-banner">
   <p>Мы используем cookies для аналитики и улучшения сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="../cookies/">политикой cookies</a> и <a href="../privacy/">политикой конфиденциальности</a>.</p>
   <div class="cookie-actions">
-    <button class="cookie-btn cookie-btn-more" onclick="window.location.href='/cookies'">Подробнее</button>
+    <button class="cookie-btn cookie-btn-more" onclick="window.location.href='../cookies/'">Подробнее</button>
     <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Принять</button>
   </div>
 </div>
