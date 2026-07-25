@@ -1,15 +1,12 @@
 // === Отслеживание конверсионных действий (КОМНАТА СВЕТА) ===
-// Событие уходит и в Яндекс.Метрику (reachGoal), и в GA4 (gtag event) —
-// без необходимости заранее создавать цели в интерфейсах.
+// Событие уходит только в Яндекс.Метрику (reachGoal). GA4 сознательно не
+// подключаем — решение зафиксировано в README.
 (function () {
-  var YM_COUNTER_ID = 0; // TODO: вставить ID счётчика Яндекс.Метрики после регистрации
+  var YM_COUNTER_ID = 0; // TODO: вставить ID счётчика после подключения домена и регистрации — см. README
   function track(goal, params) {
     params = params || {};
     if (window.ym && YM_COUNTER_ID) {
       try { window.ym(YM_COUNTER_ID, 'reachGoal', goal, params); } catch (e) {}
-    }
-    if (window.gtag) {
-      try { window.gtag('event', goal, params); } catch (e) {}
     }
   }
 
