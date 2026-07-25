@@ -96,6 +96,16 @@ h1{font-family:'Playfair Display',serif;font-weight:500;text-transform:uppercase
   transition:all .3s;
 }
 .back-link:hover{border-color:var(--light);color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.15)}
+.doc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:40px}
+.doc-actions .back-link{margin-top:0}
+.pdf-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--void);background:var(--light);border:1px solid var(--light);
+  padding:15px 28px;text-decoration:none;transition:all .3s;
+}
+.pdf-btn:hover{background:transparent;color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.15)}
+.pdf-btn svg{width:15px;height:15px;flex-shrink:0}
 
 /* ── footer ─────────────────────────── */
 footer{padding:60px 0 40px;border-top:1px solid rgba(217,217,217,.08)}
@@ -282,14 +292,14 @@ footer a:hover{color:var(--light)}
 <h2>11. Реквизиты Исполнителя</h2>
 <div class="req">
 <strong>Кряжева Светлана Вячеславовна</strong><br>
-<span class="placeholder">ИНН: [указать при наличии]</span><br>
-<span class="placeholder">Банковские реквизиты: [указать при наличии]</span><br>
-Контактный e-mail: <a href="mailto:lightroom.theatre@gmail.com">lightroom.theatre@gmail.com</a><br>
-<span class="placeholder">Адрес для корреспонденции: [указать]</span>
+Контактный e-mail: <a href="mailto:lightroom.theatre@gmail.com">lightroom.theatre@gmail.com</a>
 </div>
 
 <p style="margin-top:28px">См. также: <a href="../privacy/">Политика конфиденциальности</a> · <a href="../cookies/">Политика cookies</a> · <a href="../documents/">Все документы</a></p>
-<a class="back-link" href="../">← На главную</a>
+<div class="doc-actions">
+  <a class="pdf-btn" href="../assets/docs/oferta.pdf" download="oferta-komnata-sveta.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>Скачать PDF</a>
+  <a class="back-link" href="../">← На главную</a>
+</div>
 
 </div>
 </div>

@@ -96,6 +96,16 @@ h1{font-family:'Playfair Display',serif;font-weight:500;text-transform:uppercase
   transition:all .3s;
 }
 .back-link:hover{border-color:var(--light);color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.15)}
+.doc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:40px}
+.doc-actions .back-link{margin-top:0}
+.pdf-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--void);background:var(--light);border:1px solid var(--light);
+  padding:15px 28px;text-decoration:none;transition:all .3s;
+}
+.pdf-btn:hover{background:transparent;color:var(--light);box-shadow:0 0 20px rgba(255,255,255,.15)}
+.pdf-btn svg{width:15px;height:15px;flex-shrink:0}
 
 /* ── footer ─────────────────────────── */
 footer{padding:60px 0 40px;border-top:1px solid rgba(217,217,217,.08)}
@@ -238,7 +248,7 @@ footer a:hover{color:var(--light)}
 <h2>1. Общие положения</h2>
 <p>1.1. Оператор Бота: Кряжева Светлана Вячеславовна. Реквизиты указаны в разделе 9 настоящих Правил.</p>
 <p>1.2. Используя Бот (в том числе отправив первое сообщение или команду /start), Пользователь принимает настоящие Правила, <a href="../privacy/">Политику конфиденциальности</a> и <a href="../oferta/">Договор публичной оферты</a> Оператора в полном объёме.</p>
-<p>1.3. Настоящие Правила являются неотъемлемой частью документов, доступных на сайте https://komnata-sveta.ru.</p>
+<p>1.3. Настоящие Правила являются неотъемлемой частью документов, доступных на сайте komnata-sveta.ru.</p>
 
 <h2>2. Назначение Бота</h2>
 <p>2.1. Бот предоставляет справочную информацию о деятельности «Комнаты света» и фестиваля БУФЕСТ, помогает выбрать показы и мероприятия, принимает обращения и заявки на сотрудничество, перенаправляет на официальный сайт для приобретения билетов.</p>
@@ -268,19 +278,22 @@ footer a:hover{color:var(--light)}
 <p>Споры решаются путём переговоров. При недостижении соглашения — в порядке, установленном законодательством Российской Федерации. Претензии направляются на <a href="mailto:lightroom.theatre@gmail.com">lightroom.theatre@gmail.com</a>.</p>
 
 <h2>9. Заключительные положения</h2>
-<p>9.1. Оператор вправе вносить изменения в Правила. Новая редакция вступает в силу с момента публикации на сайте https://komnata-sveta.ru.</p>
+<p>9.1. Оператор вправе вносить изменения в Правила. Новая редакция вступает в силу с момента публикации на сайте komnata-sveta.ru.</p>
 <p>9.2. Продолжение использования Бота после изменений означает согласие с новой редакцией.</p>
 <p>9.3. По всем вопросам: <a href="https://t.me/komnata_sveta_bot" target="_blank" rel="noopener">t.me/komnata_sveta_bot</a> либо <a href="mailto:lightroom.theatre@gmail.com">lightroom.theatre@gmail.com</a></p>
 
 <div class="req">
 <strong>Кряжева Светлана Вячеславовна</strong><br>
-<span class="placeholder">ИНН: [указать при наличии]</span><br>
+Оператор Telegram-бота @komnata_sveta_bot творческого проекта «Комната света»<br>
 Контактный e-mail: <a href="mailto:lightroom.theatre@gmail.com">lightroom.theatre@gmail.com</a><br>
-<span class="placeholder">Адрес для корреспонденции: [указать]</span>
+Telegram: <a href="https://t.me/komnata_sveta_bot" target="_blank" rel="noopener">t.me/komnata_sveta_bot</a>
 </div>
 
 <p style="margin-top:28px">См. также: <a href="../privacy/">Политика конфиденциальности</a> · <a href="../oferta/">Договор оферты</a> · <a href="../documents/">Все документы</a></p>
-<a class="back-link" href="../">← На главную</a>
+<div class="doc-actions">
+  <a class="pdf-btn" href="../assets/docs/bot-rules.pdf" download="bot-rules-komnata-sveta.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>Скачать PDF</a>
+  <a class="back-link" href="../">← На главную</a>
+</div>
 
 </div>
 </div>
